@@ -30,6 +30,19 @@ componentDidMount is called once the component has mounted and is rendered for t
 **Q: What are React hooks?**  
 React hooks are functions that allow you to use state and other React features without writing a class component. Hooks were introduced in React 16.8 and include useState, useEffect, useContext, and more. They make it easier to write reusable and composable React components.
 
+**Q: Why do we need to use the key property in React? What are the benefits of using key when rendering a list of elements?**  
+A: In React, the key property is used to identify individual elements in a list of elements that are rendered dynamically. When rendering a list of elements using an array in React, each element needs a unique identifier so that React can efficiently update and re-render the list when necessary.
+
+Here's why we need the key property in React:
+
+- Efficient updates: When a list of elements is rendered dynamically, React needs to keep track of the individual elements so that it can efficiently update and re-render them when necessary. Without a key property, React would have to compare each element in the list to determine which elements have changed and need to be re-rendered, which can be slow and inefficient.
+
+- Prevent errors: Using a key property helps prevent errors that can occur when rendering a list of elements. If two elements in the list have the same key property, React will throw an error, as each element in the list needs to have a unique identifier.
+
+- Maintain state: When a list of elements is re-rendered, React maintains the state of the individual elements using their key property. This means that if an element changes position in the list, React can still maintain its state and prevent it from being re-initialized.
+
+In summary, the key property in React is used to identify individual elements in a list of elements so that React can efficiently update and re-render the list when necessary, prevent errors, and maintain the state of the individual elements.
+
 ## Advanced
 **Q: Imagine you have a React application with a parent component, a child component, and a grandchild component. Can you describe in what order the lifecycle methods of each component are called during the mounting, updating, and unmounting phases?**  
 A: When a parent component renders its child component, and the child component renders its own child component, the lifecycle methods are called in the following order:
@@ -81,4 +94,22 @@ For example:
     myFrozenObj.name = 'Jane'; // Invalid, since myFrozenObj is immutable
 To summarize, const is used to declare a variable that cannot be reassigned, whereas Object.freeze() is used to create an immutable object that cannot be modified.
 
+**Q: What is the difference between controlled and uncontrolled components in React? When would you use one over the other?**  
+In React, there are two ways to manage form inputs: controlled components and uncontrolled components. The main difference between the two is how they handle and update the input values.
+
+Controlled Components:
+
+- Controlled components are components in which the value of the input is controlled by the component's state.
+- When the user types something into the input, it triggers an onChange event which updates the component's state, which in turn updates the value of the input.
+- The value of the input is always synced with the component's state, so you can easily access and manipulate it through the state.
+- Controlled components are often used when you need to have more control over the form data and need to perform some validation or formatting before submitting the data.
+
+Uncontrolled Components:
+
+- Uncontrolled components are components in which the value of the input is handled by the DOM.
+- When the user types something into the input, the DOM handles the value and the component does not have any direct control over it.
+- To get the value of the input, you need to use a ref to access the DOM node.
+- Uncontrolled components are often used when you don't need to do any validation or formatting on the data and just want to get the data and submit it as is.
+
+In summary, controlled components use React state to manage the value of the input, while uncontrolled components rely on the DOM to handle the value. Controlled components give you more control and flexibility over the form data, while uncontrolled components are simpler to use and require less code.
 
