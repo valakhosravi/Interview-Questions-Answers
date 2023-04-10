@@ -1,3 +1,5 @@
+# JavaScript
+## Basic
 **Q: What is JavaScript?**  
 A: JavaScript is a high-level, interpreted programming language that is used to create dynamic web pages and web applications. It is a client-side scripting language that runs in the browser and is used to add interactivity to web pages.
 
