@@ -1,3 +1,5 @@
+# React
+## Basic
 **Q: What is React?**  
 React is a JavaScript library for building user interfaces. It is based on the concept of components, which are reusable UI building blocks that can be composed together to create complex UIs. React was developed by Facebook and is widely used in web development.
 
@@ -28,7 +30,39 @@ componentDidMount is called once the component has mounted and is rendered for t
 **Q: What are React hooks?**  
 React hooks are functions that allow you to use state and other React features without writing a class component. Hooks were introduced in React 16.8 and include useState, useEffect, useContext, and more. They make it easier to write reusable and composable React components.
 
+## Advanced
+**Q: Imagine you have a React application with a parent component, a child component, and a grandchild component. Can you describe in what order the lifecycle methods of each component are called during the mounting, updating, and unmounting phases?**  
+A: When a parent component renders its child component, and the child component renders its own child component, the lifecycle methods are called in the following order:
 
+**Mounting:**
+
+- Parent component: constructor() -> getDerivedStateFromProps() -> render() -> componentDidMount()
+- Child component: constructor() -> getDerivedStateFromProps() -> render() -> componentDidMount()
+- Grandchild component: constructor() -> getDerivedStateFromProps() -> render() -> componentDidMount()
+
+**Updating:**
+
+When a state or prop change occurs in the parent component, the following methods are called in order:
+
+- Parent component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
+- Child component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
+- Grandchild component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
+When a state or prop change occurs in the child component, the following methods are called in order:
+
+- Child component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
+- Grandchild component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
+
+Note that the parent component's lifecycle methods are not called in this scenario.
+
+**Unmounting:**
+
+When the parent component is unmounted, the following method is called in order:
+
+- Parent component: componentWillUnmount()
+- Child component: componentWillUnmount()
+- Grandchild component: componentWillUnmount()
+
+Note that when the child or grandchild component is unmounted, only its own componentWillUnmount() method is called. The parent component's lifecycle methods are not affected by the unmounting of its child components.
 
 
 
