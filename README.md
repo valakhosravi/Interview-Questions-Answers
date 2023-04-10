@@ -1,11 +1,12 @@
 # Interview Questions for Developers
-This repository contains a collection of interview questions for developers. The questions are designed to cover a wide range of topics and difficulty levels, from basic to advanced. Whether you are a beginner or an experienced developer, this repository can help you prepare for your next job interview.
+This repository contains a collection of interview questions for developers. The questions are designed to cover a wide range of topics and difficulty levels, from basic to advanced.  
+Whether you are a beginner or an experienced developer, this repository can help you prepare for your next job interview.
 
 ## Topics
 The questions cover a variety of topics related to software development, including:
 - Data structures and algorithms  
 - Programming languages
-  - Javascript
+  - [JavaScript](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Javascript)
   - React
   - Angular
   - Vue.js
