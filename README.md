@@ -3,6 +3,7 @@ This repository contains a collection of interview questions for developers. The
 Whether you are a beginner or an experienced developer, this repository can help you prepare for your next job interview.
 
 ## Topics
+### Technical
 The questions cover a variety of topics related to software development, including:
 - [Data structures and algorithms](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Data%20structures%20and%20algorithms/README.md)  
 - Programming languages
@@ -13,11 +14,37 @@ The questions cover a variety of topics related to software development, includi
   - Python
   - C#
   - .NET
+  - HTML/CSS
+  - Node.js
+  - SQL
 - [Object-oriented programming](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Object-oriented%20programming/README.md)  
 - System design and architecture  
 - Testing and debugging  
-
+- DevOps
+- Docker
+- Git
+- Agile
+- Project management
+- Front-end development
+- Back-end development
+- Full-stack development
+- Mobile app development
+- Security
 And more  
+### non-technical
+Non-technical interview questions are questions that are asked during the interview process to evaluate a candidate's personal characteristics, soft skills, and ability to fit into the company culture.
+- Behavioral
+- Diversity and inclusion
+- Conflict resolution
+- Leadership
+- Teamwork
+- Communication skills
+- Motivation and goal-setting
+- Time management
+- Adaptability
+- Decision-making
+- Emotional intelligence
+- Customer service
 ## How to Use
 To use this repository, simply browse the questions and answers to improve your knowledge and skills. You can also use them to prepare for a job interview or a technical interview.
 
