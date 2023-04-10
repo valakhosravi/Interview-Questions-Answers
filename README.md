@@ -32,6 +32,7 @@ The questions cover a variety of topics related to software development, includi
 - Full-stack development
 - Mobile app development
 - Security  
+
 And more  
 ### non-technical
 Non-technical interview questions are questions that are asked during the interview process to evaluate a candidate's personal characteristics, soft skills, and ability to fit into the company culture.
