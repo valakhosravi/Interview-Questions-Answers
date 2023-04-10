@@ -64,5 +64,21 @@ When the parent component is unmounted, the following method is called in order:
 
 Note that when the child or grandchild component is unmounted, only its own componentWillUnmount() method is called. The parent component's lifecycle methods are not affected by the unmounting of its child components.
 
+**Q: What is the difference between using const and Object.freeze() in JavaScript when it comes to creating immutable variables? Can you give an example of how each works and when you would choose one over the other?**  
+In JavaScript, const and Object.freeze() are both used to create immutable variables, but they have different use cases and behaviors.
+
+const is used to declare a variable that cannot be reassigned, meaning its reference to the value it holds cannot be changed. However, it doesn't make the value itself immutable. This means that if the variable holds an object or an array, the properties or elements of the object or array can still be modified.
+
+For example:
+
+    const myObj = {name: 'John'};
+    myObj.name = 'Jane'; // Valid, but reassigning myObj would not be allowed
+On the other hand, Object.freeze() is used to create an immutable object by preventing any changes to its properties or elements. Once an object is frozen, it cannot be modified in any way, including adding or removing properties or changing the values of existing properties.
+
+For example:
+
+    const myFrozenObj = Object.freeze({name: 'John'});
+    myFrozenObj.name = 'Jane'; // Invalid, since myFrozenObj is immutable
+To summarize, const is used to declare a variable that cannot be reassigned, whereas Object.freeze() is used to create an immutable object that cannot be modified.
 
 
