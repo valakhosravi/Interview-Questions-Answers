@@ -4,10 +4,10 @@ Whether you are a beginner or an experienced developer, this repository can help
 
 ## Topics
 The questions cover a variety of topics related to software development, including:
-- Data structures and algorithms  
+- [Data structures and algorithms](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Data%20structures%20and%20algorithms)  
 - Programming languages
   - [JavaScript](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Javascript)
-  - React
+  - [React](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/React)
   - Angular
   - Vue.js
   - Python
