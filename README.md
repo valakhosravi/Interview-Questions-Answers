@@ -5,11 +5,11 @@ Whether you are a beginner or an experienced developer, this repository can help
 ## Topics
 ### Technical
 The questions cover a variety of topics related to software development, including:
-- [Data structures and algorithms](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Data%20structures%20and%20algorithms/README.md)  
+- [Data structures and algorithms](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Data%20structures%20and%20algorithms.md)  
 - Programming languages
-  - [JavaScript](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Javascript/README.md)
+  - [JavaScript](https://github.com/valakhosravi/Interview-Questions-Answers/tree/test/Technical/Programming%20languages/JavaScript)
     - Typscript
-    - [React](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/React/README.md)
+    - [React](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Programming%20languages/JavaScript/React.md)
     - Angular
     - Vue.js
     - Node.js
@@ -19,7 +19,7 @@ The questions cover a variety of topics related to software development, includi
   - .NET
   - HTML/CSS
   - SQL
-- [Object-oriented programming](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Object-oriented%20programming/README.md)  
+- [Object-oriented programming](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Object-oriented%20programming.md)  
 - System design and architecture  
 - Testing and debugging  
 - DevOps
@@ -35,7 +35,7 @@ The questions cover a variety of topics related to software development, includi
 And more  
 ### non-technical
 Non-technical interview questions are questions that are asked during the interview process to evaluate a candidate's personal characteristics, soft skills, and ability to fit into the company culture.
-- Behavioral
+- [Behavioral](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Non-technical/Behavioral.md)
 - Diversity and inclusion
 - Conflict resolution
 - Leadership
