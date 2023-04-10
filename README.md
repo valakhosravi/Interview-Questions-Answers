@@ -8,14 +8,16 @@ The questions cover a variety of topics related to software development, includi
 - [Data structures and algorithms](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Data%20structures%20and%20algorithms/README.md)  
 - Programming languages
   - [JavaScript](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Javascript/README.md)
-  - [React](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/React/README.md)
-  - Angular
-  - Vue.js
+    - Typscript
+    - [React](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/React/README.md)
+    - Angular
+    - Vue.js
+    - Node.js
+      - Express.js
   - Python
   - C#
   - .NET
   - HTML/CSS
-  - Node.js
   - SQL
 - [Object-oriented programming](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Object-oriented%20programming/README.md)  
 - System design and architecture  
