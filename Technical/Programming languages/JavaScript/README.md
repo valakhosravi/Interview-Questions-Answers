@@ -50,3 +50,23 @@ A: Null and undefined are both used to represent absence of value, but they have
 
 **Q: What is the difference between call() and apply() methods in JavaScript?**  
 A: The call() and apply() methods are both used to invoke a function with a specific object as the value of "this", but they differ in how arguments are passed to the function. The call() method passes arguments as a comma-separated list, while the apply() method passes arguments as an array.
+
+**Q: what is generator function?**  
+A generator function is a special type of function in JavaScript that allows you to define an iterative algorithm by writing a single function that can generate a sequence of values over time. When you call a generator function, it doesn't run to completion right away; instead, it returns an iterator object that you can use to control the execution of the function.
+
+Here is an example of a simple generator function in JavaScript:
+
+    function* countUpTo(n) {
+      let count = 0;
+      while (count < n) {
+        yield count++;
+      }
+    }
+
+    const iterator = countUpTo(5);
+
+    console.log(iterator.next().value); // 0
+    console.log(iterator.next().value); // 1
+    console.log(iterator.next().value); // 2
+    console.log(iterator.next().value); // 3
+    console.log(iterator.next().value); // 4
