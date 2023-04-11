@@ -70,3 +70,89 @@ Here is an example of a simple generator function in JavaScript:
     console.log(iterator.next().value); // 2
     console.log(iterator.next().value); // 3
     console.log(iterator.next().value); // 4
+
+**Q: Write a function that takes an arbitrary number of arguments and returns a new function that will cycle through those arguments in order each time it is called. For example, if the function is called with the arguments "first", "second", and "third", the first call to the returned function should return "first", the second call should return "second", the third call should return "third", and the fourth call should return "first" again. Provide an implementation of the function and explain how it works.**  
+
+    function toggler(...items) {
+      let index = 0;
+      return function() {
+        const currentItem = items[index];
+        index = (index + 1) % items.length;
+        return currentItem;
+      };
+    }
+
+This function takes an arbitrary number of arguments using the rest parameter syntax (...items), and returns a new function that will cycle through those items in order each time it is called. The index variable keeps track of the current index in the items array, and the function returns the item at that index. The index is then incremented using modulo arithmetic to ensure that it loops back to 0 when it reaches the end of the array.
+
+**Q: What will be the output of the following code snippet when executed in a JavaScript environment?**
+
+    var id = 'global id';
+    const object = {
+      id: 'object id',
+      foo() {
+         console.log(this.id) 
+      },
+    }
+
+    object.foo();
+    setTimeout(object.foo, 1000);
+
+**and** 
+
+    var id = 'global id';
+    const object = {
+      id: 'object id',
+      foo: () => {
+         console.log(this.id) 
+      },
+    }
+
+    object.foo();
+    setTimeout(object.foo, 1000);
+
+**Explain your answer and discuss the difference in behavior between using a regular function and an arrow function as the method of an object in the context of this keyword.** 
+
+### Foo() as a regular function
+The output of the code will be:
+
+    object id
+    global id
+
+Here's why:
+
+When object.foo() is called, the function is invoked with this set to object, so the console logs object id.
+
+When setTimeout(object.foo, 1000) is called, it creates a new function that is a reference to object.foo and schedules it to be called after a 1-second delay. However, when the function is actually called after 1 second, this is not bound to object anymore. Instead, it is bound to the global object (e.g. window in a browser or global in Node.js), which has a property id set to 'global id'. Therefore, the console logs global id.
+
+This behavior can be modified by using bind method to bind this to object in the setTimeout call:
+
+    setTimeout(object.foo.bind(object), 1000);
+
+In that case, the output will be:
+
+    object id
+    object id
+
+because this is bound to object in both calls to foo().
+
+### Foo() as an arrow function
+
+If we convert foo to an arrow function, then the this keyword inside the arrow function will refer to the this of the enclosing scope, which is the global this. Therefore, both console.log(this.id) statements will log "global id" instead of "object id".
+
+Here's how the modified code would look like:
+
+    var id = 'global id';
+    const object = {
+      id: 'object id',
+      foo: () => {
+         console.log(this.id) 
+      },
+    }
+
+    object.foo()
+    setTimeout(object.foo, 1000)
+        
+The output would be:
+
+    global id
+    global id
