@@ -30,6 +30,7 @@ componentDidMount is called once the component has mounted and is rendered for t
 **Q: What are React hooks?**  
 React hooks are functions that allow you to use state and other React features without writing a class component. Hooks were introduced in React 16.8 and include useState, useEffect, useContext, and more. They make it easier to write reusable and composable React components.
 
+<<<<<<< HEAD
 **Q: What is a promise in React?**  
 A promise is an object in JavaScript that represents the eventual completion or failure of an asynchronous operation and its resulting value.
 
@@ -56,6 +57,31 @@ Some best practices for using promises in React include:
 - Avoiding nesting promises and instead chaining them together using the .then() method
 - Using async/await syntax to make asynchronous code more readable and maintainable.
 
+=======
+**Q: Why do we need to use the key property in React? What are the benefits of using key when rendering a list of elements?**  
+A: In React, the key property is used to identify individual elements in a list of elements that are rendered dynamically. When rendering a list of elements using an array in React, each element needs a unique identifier so that React can efficiently update and re-render the list when necessary.
+
+Here's why we need the key property in React:
+
+- Efficient updates: When a list of elements is rendered dynamically, React needs to keep track of the individual elements so that it can efficiently update and re-render them when necessary. Without a key property, React would have to compare each element in the list to determine which elements have changed and need to be re-rendered, which can be slow and inefficient.
+
+- Prevent errors: Using a key property helps prevent errors that can occur when rendering a list of elements. If two elements in the list have the same key property, React will throw an error, as each element in the list needs to have a unique identifier.
+
+- Maintain state: When a list of elements is re-rendered, React maintains the state of the individual elements using their key property. This means that if an element changes position in the list, React can still maintain its state and prevent it from being re-initialized.
+
+In summary, the key property in React is used to identify individual elements in a list of elements so that React can efficiently update and re-render the list when necessary, prevent errors, and maintain the state of the individual elements.
+
+**Q: How to prevent components from re-rendering?**  
+1. Use shouldComponentUpdate or React.memo: You can implement the shouldComponentUpdate lifecycle method or use the React.memo higher-order component to tell React when a component should re-render. By implementing shouldComponentUpdate, you can define conditions that must be met before a component re-renders. React.memo, on the other hand, is a higher-order component that wraps a functional component and memoizes it so that it only re-renders when its props change.
+
+2. Use PureComponent: You can use the PureComponent class component in React, which automatically implements the shouldComponentUpdate method by performing a shallow comparison of the component's props and state. If the props and state are the same as the previous render, the component won't re-render.
+
+3. Use a key property: When rendering a list of components, you can assign a unique key to each component to help React efficiently update the list without re-rendering unnecessary components. If the key remains the same, React will know that the component hasn't changed and won't re-render it.
+
+4. Use state management libraries: Using state management libraries such as Redux or MobX can also help prevent unnecessary re-renders by optimizing the flow of data between components.
+
+In summary, there are several ways to prevent components from re-rendering in React, including implementing shouldComponentUpdate or React.memo, using PureComponent, using a key property, and using state management libraries. Choosing the appropriate method depends on the specific use case and the requirements of the application.
+>>>>>>> 6a6aac6e874aa0323e8c4c4a287541f7181cbed6
 ## Advanced
 **Q: Imagine you have a React application with a parent component, a child component, and a grandchild component. Can you describe in what order the lifecycle methods of each component are called during the mounting, updating, and unmounting phases?**  
 A: When a parent component renders its child component, and the child component renders its own child component, the lifecycle methods are called in the following order:
@@ -104,6 +130,7 @@ For example:
     myFrozenObj.name = 'Jane'; // Invalid, since myFrozenObj is immutable
 To summarize, const is used to declare a variable that cannot be reassigned, whereas Object.freeze() is used to create an immutable object that cannot be modified.
 
+<<<<<<< HEAD
 **Q: What is lazy loading in React?**  
 Lazy loading is a technique in React that enables you to defer the loading of non-critical resources until they are needed. This can help improve the initial load time and performance of your application by reducing the amount of data that needs to be loaded upfront.
 
@@ -124,6 +151,26 @@ One potential downside of lazy loading is that it can lead to a slower overall p
 
 **Q: What are some best practices for implementing lazy loading in React?**  
 Some best practices for implementing lazy loading in React include:
+=======
+**Q: What is the difference between controlled and uncontrolled components in React? When would you use one over the other?**  
+In React, there are two ways to manage form inputs: controlled components and uncontrolled components. The main difference between the two is how they handle and update the input values.
+
+Controlled Components:
+
+- Controlled components are components in which the value of the input is controlled by the component's state.
+- When the user types something into the input, it triggers an onChange event which updates the component's state, which in turn updates the value of the input.
+- The value of the input is always synced with the component's state, so you can easily access and manipulate it through the state.
+- Controlled components are often used when you need to have more control over the form data and need to perform some validation or formatting before submitting the data.
+
+Uncontrolled Components:
+
+- Uncontrolled components are components in which the value of the input is handled by the DOM.
+- When the user types something into the input, the DOM handles the value and the component does not have any direct control over it.
+- To get the value of the input, you need to use a ref to access the DOM node.
+- Uncontrolled components are often used when you don't need to do any validation or formatting on the data and just want to get the data and submit it as is.
+
+In summary, controlled components use React state to manage the value of the input, while uncontrolled components rely on the DOM to handle the value. Controlled components give you more control and flexibility over the form data, while uncontrolled components are simpler to use and require less code.
+>>>>>>> 6a6aac6e874aa0323e8c4c4a287541f7181cbed6
 
 - Prioritizing the lazy loading of critical resources
 - Limiting the number of requests made during lazy loading
