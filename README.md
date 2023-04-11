@@ -2,6 +2,13 @@
 This repository contains a collection of interview questions for developers. The questions are designed to cover a wide range of topics and difficulty levels, from basic to advanced.  
 Whether you are a beginner or an experienced developer, this repository can help you prepare for your next job interview.
 
+## Goals
+**Job seekers:** If the primary audience for your repository is job seekers, consider including goals to help them make the most of the interview questions and answers. For example, you could suggest that job seekers aim to review at least 10 interview questions per day, or that they try to answer each question in writing before reviewing the suggested answers.
+
+**Hiring managers:** If your repository is aimed at hiring managers, consider including goals to help them use the interview questions effectively during the hiring process. For example, you could suggest that hiring managers aim to ask at least 5 behavioral interview questions during each interview, or that they use the repository to create customized interview question sets for each candidate.
+
+**Improving skills:** Another way to approach the goals section could be to suggest goals for job seekers to improve their skills. For example, you could suggest that job seekers aim to improve their understanding of data structures and algorithms by reviewing one new question per day, or that they practice writing code on a whiteboard or in a code editor to improve their technical skills.
+
 ## Topics
 ### Technical
 The questions cover a variety of topics related to software development, including:
