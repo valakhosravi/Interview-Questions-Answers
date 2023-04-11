@@ -22,7 +22,8 @@ The questions cover a variety of topics related to software development, includi
     - Node.js
       - Express.js
   - [Python](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/Python.md)
-  - C#
+  - C/C++
+  - [C#](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/C%23.md)
   - .NET
   - HTML/CSS
   - SQL
