@@ -30,6 +30,34 @@ componentDidMount is called once the component has mounted and is rendered for t
 **Q: What are React hooks?**  
 React hooks are functions that allow you to use state and other React features without writing a class component. Hooks were introduced in React 16.8 and include useState, useEffect, useContext, and more. They make it easier to write reusable and composable React components.
 
+<<<<<<< HEAD
+**Q: What is a promise in React?**  
+A promise is an object in JavaScript that represents the eventual completion or failure of an asynchronous operation and its resulting value.
+
+**Q: How do you create a promise in React?**  
+In React, you can create a promise using the Promise constructor function. The constructor function takes a single argument, which is a function that has two parameters: resolve and reject.
+
+**Q: How do you handle errors with promises in React?**  
+You can handle errors with promises in React by using the .catch() method. This method is called if the promise is rejected and allows you to handle the error and perform any necessary error handling.
+
+**Q: How do you chain promises in React?**  
+You can chain promises in React using the .then() method. This method takes a function that is called with the result of the previous promise in the chain. You can also use the .catch() method to handle errors in the chain.
+
+**Q: How do you use promises with asynchronous functions in React?**  
+You can use promises with asynchronous functions in React by returning a promise from the function using the Promise constructor or by using the async/await syntax.
+
+**Q: Can you use promises to load data in React?**  
+Yes, promises can be used to load data in React. This is often done when making API requests or fetching data from a database.
+
+**Q: What are some best practices for using promises in React?**  
+Some best practices for using promises in React include:
+
+- Using promises to manage asynchronous operations and avoid callback hell
+- Using the .then() and .catch() methods to handle successful and failed promises respectively
+- Avoiding nesting promises and instead chaining them together using the .then() method
+- Using async/await syntax to make asynchronous code more readable and maintainable.
+
+=======
 **Q: Why do we need to use the key property in React? What are the benefits of using key when rendering a list of elements?**  
 A: In React, the key property is used to identify individual elements in a list of elements that are rendered dynamically. When rendering a list of elements using an array in React, each element needs a unique identifier so that React can efficiently update and re-render the list when necessary.
 
@@ -53,37 +81,35 @@ In summary, the key property in React is used to identify individual elements in
 4. Use state management libraries: Using state management libraries such as Redux or MobX can also help prevent unnecessary re-renders by optimizing the flow of data between components.
 
 In summary, there are several ways to prevent components from re-rendering in React, including implementing shouldComponentUpdate or React.memo, using PureComponent, using a key property, and using state management libraries. Choosing the appropriate method depends on the specific use case and the requirements of the application.
+>>>>>>> 6a6aac6e874aa0323e8c4c4a287541f7181cbed6
 ## Advanced
 **Q: Imagine you have a React application with a parent component, a child component, and a grandchild component. Can you describe in what order the lifecycle methods of each component are called during the mounting, updating, and unmounting phases?**  
 A: When a parent component renders its child component, and the child component renders its own child component, the lifecycle methods are called in the following order:
 
-**Mounting:**
-
-- Parent component: constructor() -> getDerivedStateFromProps() -> render() -> componentDidMount()
-- Child component: constructor() -> getDerivedStateFromProps() -> render() -> componentDidMount()
-- Grandchild component: constructor() -> getDerivedStateFromProps() -> render() -> componentDidMount()
+**Mounting:**  
+- Parent
+- Child
+- Grandchild
 
 **Updating:**
 
-When a state or prop change occurs in the parent component, the following methods are called in order:
+When a state or prop change occurs in the parent component, the following methods are called in order:  
+- Parent
+- Child
+- Grandchild
 
-- Parent component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
-- Child component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
-- Grandchild component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
-When a state or prop change occurs in the child component, the following methods are called in order:
-
-- Child component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
-- Grandchild component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
+When a state or prop change occurs in the child component, the following methods are called in order:  
+- Child
+- Grandchild
 
 Note that the parent component's lifecycle methods are not called in this scenario.
 
 **Unmounting:**
 
-When the parent component is unmounted, the following method is called in order:
-
-- Parent component: componentWillUnmount()
-- Child component: componentWillUnmount()
-- Grandchild component: componentWillUnmount()
+When the parent component is unmounted, the following method is called in order:  
+- Parent
+- Child
+- Grandchild
 
 Note that when the child or grandchild component is unmounted, only its own componentWillUnmount() method is called. The parent component's lifecycle methods are not affected by the unmounting of its child components.
 
@@ -104,6 +130,28 @@ For example:
     myFrozenObj.name = 'Jane'; // Invalid, since myFrozenObj is immutable
 To summarize, const is used to declare a variable that cannot be reassigned, whereas Object.freeze() is used to create an immutable object that cannot be modified.
 
+<<<<<<< HEAD
+**Q: What is lazy loading in React?**  
+Lazy loading is a technique in React that enables you to defer the loading of non-critical resources until they are needed. This can help improve the initial load time and performance of your application by reducing the amount of data that needs to be loaded upfront.
+
+**Q: How do you implement lazy loading in React?**  
+In React, you can implement lazy loading by using the dynamic import() function that is built into JavaScript. This function allows you to asynchronously load a module when it is needed. You can also use the React.lazy() function and Suspense component to simplify the process of lazy loading.
+
+**Q: What are the benefits of lazy loading in React?**  
+Lazy loading can help improve the performance of your application by reducing the initial load time, which can lead to a better user experience. It can also help reduce the amount of data that needs to be loaded upfront, which can help improve the perceived performance of your application.
+
+**Q: How can you measure the performance of lazy loading in React?**  
+You can measure the performance of lazy loading in React by using tools such as Chrome DevTools or Lighthouse. These tools can help you identify areas of your application that can be optimized for better performance, including lazy loading.
+
+**Q: Can lazy loading be used for images and other media assets in React?**  
+Yes, lazy loading can be used for images and other media assets in React. This can help reduce the initial load time of your application by only loading these assets when they are needed.
+
+**Q: Are there any downsides to using lazy loading in React?**  
+One potential downside of lazy loading is that it can lead to a slower overall performance if not implemented correctly. This is because lazy loading can increase the number of network requests that need to be made, which can negatively impact performance. Additionally, lazy loading can be more complex to implement than other performance optimization techniques.
+
+**Q: What are some best practices for implementing lazy loading in React?**  
+Some best practices for implementing lazy loading in React include:
+=======
 **Q: What is the difference between controlled and uncontrolled components in React? When would you use one over the other?**  
 In React, there are two ways to manage form inputs: controlled components and uncontrolled components. The main difference between the two is how they handle and update the input values.
 
@@ -122,4 +170,10 @@ Uncontrolled Components:
 - Uncontrolled components are often used when you don't need to do any validation or formatting on the data and just want to get the data and submit it as is.
 
 In summary, controlled components use React state to manage the value of the input, while uncontrolled components rely on the DOM to handle the value. Controlled components give you more control and flexibility over the form data, while uncontrolled components are simpler to use and require less code.
+>>>>>>> 6a6aac6e874aa0323e8c4c4a287541f7181cbed6
 
+- Prioritizing the lazy loading of critical resources
+- Limiting the number of requests made during lazy loading
+- Using code splitting to break up large bundles into smaller, more manageable chunks
+- Minimizing the use of third-party libraries that may add unnecessary overhead
+- Testing and monitoring the performance of your lazy loading implementation to identify areas for improvement.
