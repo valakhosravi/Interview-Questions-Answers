@@ -21,7 +21,7 @@ The questions cover a variety of topics related to software development, includi
     - Vue.js
     - Node.js
       - Express.js
-  - Python
+  - [Python](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/Python.md)
   - C#
   - .NET
   - HTML/CSS
@@ -31,7 +31,7 @@ The questions cover a variety of topics related to software development, includi
 - Testing and debugging  
 - DevOps
 - Docker
-- Git
+- [Git](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Git.md)
 - Agile
 - Project management
 - Front-end development
@@ -47,7 +47,7 @@ Non-technical interview questions are questions that are asked during the interv
 - Diversity and inclusion
 - Conflict resolution
 - Leadership
-- Teamwork
+- [Teamwork](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Non-technical/Teamwork.md)
 - Communication skills
 - Motivation and goal-setting
 - Time management
