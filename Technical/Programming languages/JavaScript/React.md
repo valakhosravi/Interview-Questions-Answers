@@ -34,33 +34,30 @@ React hooks are functions that allow you to use state and other React features w
 **Q: Imagine you have a React application with a parent component, a child component, and a grandchild component. Can you describe in what order the lifecycle methods of each component are called during the mounting, updating, and unmounting phases?**  
 A: When a parent component renders its child component, and the child component renders its own child component, the lifecycle methods are called in the following order:
 
-**Mounting:**
-
-- Parent component: constructor() -> getDerivedStateFromProps() -> render() -> componentDidMount()
-- Child component: constructor() -> getDerivedStateFromProps() -> render() -> componentDidMount()
-- Grandchild component: constructor() -> getDerivedStateFromProps() -> render() -> componentDidMount()
+**Mounting:**  
+- Parent
+- Child
+- Grandchild
 
 **Updating:**
 
-When a state or prop change occurs in the parent component, the following methods are called in order:
+When a state or prop change occurs in the parent component, the following methods are called in order:  
+- Parent
+- Child
+- Grandchild
 
-- Parent component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
-- Child component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
-- Grandchild component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
-When a state or prop change occurs in the child component, the following methods are called in order:
-
-- Child component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
-- Grandchild component: getDerivedStateFromProps() -> shouldComponentUpdate() -> render() -> getSnapshotBeforeUpdate() -> componentDidUpdate()
+When a state or prop change occurs in the child component, the following methods are called in order:  
+- Child
+- Grandchild
 
 Note that the parent component's lifecycle methods are not called in this scenario.
 
 **Unmounting:**
 
-When the parent component is unmounted, the following method is called in order:
-
-- Parent component: componentWillUnmount()
-- Child component: componentWillUnmount()
-- Grandchild component: componentWillUnmount()
+When the parent component is unmounted, the following method is called in order:  
+- Parent
+- Child
+- Grandchild
 
 Note that when the child or grandchild component is unmounted, only its own componentWillUnmount() method is called. The parent component's lifecycle methods are not affected by the unmounting of its child components.
 
@@ -81,4 +78,29 @@ For example:
     myFrozenObj.name = 'Jane'; // Invalid, since myFrozenObj is immutable
 To summarize, const is used to declare a variable that cannot be reassigned, whereas Object.freeze() is used to create an immutable object that cannot be modified.
 
+**Q: What is lazy loading in React?**  
+Lazy loading is a technique in React that enables you to defer the loading of non-critical resources until they are needed. This can help improve the initial load time and performance of your application by reducing the amount of data that needs to be loaded upfront.
 
+**Q: How do you implement lazy loading in React?**  
+In React, you can implement lazy loading by using the dynamic import() function that is built into JavaScript. This function allows you to asynchronously load a module when it is needed. You can also use the React.lazy() function and Suspense component to simplify the process of lazy loading.
+
+**Q: What are the benefits of lazy loading in React?**  
+Lazy loading can help improve the performance of your application by reducing the initial load time, which can lead to a better user experience. It can also help reduce the amount of data that needs to be loaded upfront, which can help improve the perceived performance of your application.
+
+**Q: How can you measure the performance of lazy loading in React?**  
+You can measure the performance of lazy loading in React by using tools such as Chrome DevTools or Lighthouse. These tools can help you identify areas of your application that can be optimized for better performance, including lazy loading.
+
+**Q: Can lazy loading be used for images and other media assets in React?**  
+Yes, lazy loading can be used for images and other media assets in React. This can help reduce the initial load time of your application by only loading these assets when they are needed.
+
+**Q: Are there any downsides to using lazy loading in React?**  
+One potential downside of lazy loading is that it can lead to a slower overall performance if not implemented correctly. This is because lazy loading can increase the number of network requests that need to be made, which can negatively impact performance. Additionally, lazy loading can be more complex to implement than other performance optimization techniques.
+
+**Q: What are some best practices for implementing lazy loading in React?**  
+Some best practices for implementing lazy loading in React include:
+
+- Prioritizing the lazy loading of critical resources
+- Limiting the number of requests made during lazy loading
+- Using code splitting to break up large bundles into smaller, more manageable chunks
+- Minimizing the use of third-party libraries that may add unnecessary overhead
+- Testing and monitoring the performance of your lazy loading implementation to identify areas for improvement.
