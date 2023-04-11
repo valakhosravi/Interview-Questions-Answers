@@ -30,6 +30,32 @@ componentDidMount is called once the component has mounted and is rendered for t
 **Q: What are React hooks?**  
 React hooks are functions that allow you to use state and other React features without writing a class component. Hooks were introduced in React 16.8 and include useState, useEffect, useContext, and more. They make it easier to write reusable and composable React components.
 
+**Q: What is a promise in React?**  
+A promise is an object in JavaScript that represents the eventual completion or failure of an asynchronous operation and its resulting value.
+
+**Q: How do you create a promise in React?**  
+In React, you can create a promise using the Promise constructor function. The constructor function takes a single argument, which is a function that has two parameters: resolve and reject.
+
+**Q: How do you handle errors with promises in React?**  
+You can handle errors with promises in React by using the .catch() method. This method is called if the promise is rejected and allows you to handle the error and perform any necessary error handling.
+
+**Q: How do you chain promises in React?**  
+You can chain promises in React using the .then() method. This method takes a function that is called with the result of the previous promise in the chain. You can also use the .catch() method to handle errors in the chain.
+
+**Q: How do you use promises with asynchronous functions in React?**  
+You can use promises with asynchronous functions in React by returning a promise from the function using the Promise constructor or by using the async/await syntax.
+
+**Q: Can you use promises to load data in React?**  
+Yes, promises can be used to load data in React. This is often done when making API requests or fetching data from a database.
+
+**Q: What are some best practices for using promises in React?**  
+Some best practices for using promises in React include:
+
+- Using promises to manage asynchronous operations and avoid callback hell
+- Using the .then() and .catch() methods to handle successful and failed promises respectively
+- Avoiding nesting promises and instead chaining them together using the .then() method
+- Using async/await syntax to make asynchronous code more readable and maintainable.
+
 ## Advanced
 **Q: Imagine you have a React application with a parent component, a child component, and a grandchild component. Can you describe in what order the lifecycle methods of each component are called during the mounting, updating, and unmounting phases?**  
 A: When a parent component renders its child component, and the child component renders its own child component, the lifecycle methods are called in the following order:
