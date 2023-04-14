@@ -51,6 +51,26 @@ A: Null and undefined are both used to represent absence of value, but they have
 **Q: What is the difference between call() and apply() methods in JavaScript?**  
 A: The call() and apply() methods are both used to invoke a function with a specific object as the value of "this", but they differ in how arguments are passed to the function. The call() method passes arguments as a comma-separated list, while the apply() method passes arguments as an array.
 
+**Q: What is JavaScript scope and how does it work?**  
+
+A: JavaScript scope refers to the visibility and accessibility of variables and functions in different parts of your code. When you declare a variable or function, it is added to a specific scope that determines where it can be accessed from. JavaScript has two main types of scope: global scope and local scope.
+
+Global scope refers to variables and functions that are defined outside of any function or block. Global variables and functions can be accessed from anywhere in your code, including inside functions and blocks.
+
+Local scope, on the other hand, refers to variables and functions that are defined inside a function or block. Local variables and functions can only be accessed from within the function or block where they are defined. This means that they are not accessible from outside the function or block.
+
+When you reference a variable or function in your code, JavaScript looks for it in the current scope and then works its way up through the nested scopes until it finds the desired variable or function. This is known as the scope chain.
+
+For example, if you have a variable x declared inside a function, and you reference it from outside that function, JavaScript will not be able to find it because it is in a different scope.
+
+**Q: What is variable hoisting in JavaScript and how does it affect scope?**  
+
+A: Variable hoisting is a JavaScript behavior where variables and functions that are declared anywhere in a scope are moved to the top of that scope by the JavaScript interpreter. This means that you can reference a variable or function before it has been declared, and JavaScript will still be able to find it.
+
+However, only the declaration of the variable or function is hoisted, not its assignment or initialization. This means that if you reference a variable before it has been assigned a value, its value will be undefined.
+
+Variable hoisting can affect scope because it means that variables and functions can be declared anywhere in a scope and still be accessible from anywhere else in that scope. However, it's generally considered best practice to declare all variables and functions at the top of their respective scopes to avoid confusion and potential bugs.
+
 **Q: what is generator function?**  
 A generator function is a special type of function in JavaScript that allows you to define an iterative algorithm by writing a single function that can generate a sequence of values over time. When you call a generator function, it doesn't run to completion right away; instead, it returns an iterator object that you can use to control the execution of the function.
 
