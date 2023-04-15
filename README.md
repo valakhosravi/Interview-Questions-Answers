@@ -27,6 +27,19 @@ The questions cover a variety of topics related to software development, includi
   - .NET
   - HTML/CSS
   - SQL
+- Data mining
+  - [Data preprocessing and cleaning](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Data%20mining/Data%20preprocessing%20and%20cleaning.md)
+  - Exploratory data analysis (EDA)
+  - Supervised learning techniques (e.g. regression, decision trees, random forests)
+  - Unsupervised learning techniques (e.g. clustering, dimensionality reduction)
+  - Time series analysis
+  - Natural language processing (NLP)
+  - Feature selection and engineering
+  - Model evaluation and selection
+  - Ensemble methods
+  - Deep learning techniques (e.g. neural networks)
+  - Big data tools and technologies (e.g. Hadoop, Spark)
+  - Data visualization and communication of results.
 - [Object-oriented programming](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Object-oriented%20programming.md)  
 - System design and architecture  
 - Testing and debugging  
