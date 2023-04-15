@@ -1,3 +1,33 @@
+**Q: What is Angular and how is it different from AngularJS?**  
+A: Angular is a TypeScript-based open-source web application framework that is used to build complex and dynamic applications. AngularJS is the first version of Angular, which was released in 2010 and is based on JavaScript. Angular is a complete rewrite of AngularJS and has significant differences in its architecture and functionality.
+
+**Q: What are the advantages of using Angular for web development?**  
+A: Some of the advantages of using Angular for web development include its ability to provide a structured and organized approach to development, its support for modular and reusable code, and its ability to facilitate the creation of complex and dynamic user interfaces.
+
+**Q: What is a component in Angular?**  
+A: A component in Angular is a building block of an application that encapsulates the functionality and user interface elements of a specific feature or part of the application. Components are reusable and can be composed together to create more complex functionality.
+
+**Q: What is the purpose of directives in Angular?**  
+A: Directives in Angular are used to extend the functionality of HTML by providing custom attributes or elements that can be used to manipulate the behavior or appearance of the page. Directives can be built-in or custom-made.
+
+**Q: What is a service in Angular?**  
+A: A service in Angular is a class that is used to provide functionality that can be shared across multiple components in an application. Services are typically used to encapsulate logic that is not related to the user interface, such as data manipulation, network communication, or authentication.
+
+**Q: How does Angular handle dependency injection?**  
+A: Angular uses dependency injection to manage the dependencies between components, services, and other objects in an application. This allows for more modular and reusable code, as well as easier testing and maintenance.
+
+**Q: What is an Angular module?**  
+A: An Angular module is a container for a set of related components, directives, services, and other objects that are used to provide a specific functionality or feature in an application. Modules can be used to organize and structure an application and can be imported and exported as needed.
+
+**Q: What is an Angular template?**  
+A: An Angular template is a markup that is used to define the user interface of a component. Templates can include HTML, CSS, and Angular-specific syntax such as directives and binding expressions. Templates are compiled at runtime and rendered into the DOM.
+
+**Q: What is data binding in Angular?**  
+A: Data binding in Angular is the process of connecting the data model of an application to its user interface. There are several types of data binding in Angular, including interpolation, property binding, event binding, and two-way binding.
+
+**Q: How does Angular handle routing?**  
+A: Angular provides a built-in router that allows developers to define routes and navigation paths in an application. The router can be used to handle navigation between different views and components, as well as to handle URL parameters and query strings.
+
 **Q: What is the difference between a component and a directive in Angular? When would you use one over the other?**  
 A: A component is a type of directive with a template. Directives are instructions in the DOM that tell Angular how to modify or manipulate an element. The main difference between components and directives is that components have their own view and are typically used to build larger parts of an application, while directives are used to add behavior or styling to existing elements. You would use a component when you need to create a reusable UI element that can be used throughout your application, while you would use a directive when you need to modify the behavior or appearance of an existing element.
 
