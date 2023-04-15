@@ -30,7 +30,6 @@ componentDidMount is called once the component has mounted and is rendered for t
 **Q: What are React hooks?**  
 React hooks are functions that allow you to use state and other React features without writing a class component. Hooks were introduced in React 16.8 and include useState, useEffect, useContext, and more. They make it easier to write reusable and composable React components.
 
-<<<<<<< HEAD
 **Q: What is a promise in React?**  
 A promise is an object in JavaScript that represents the eventual completion or failure of an asynchronous operation and its resulting value.
 
@@ -57,7 +56,6 @@ Some best practices for using promises in React include:
 - Avoiding nesting promises and instead chaining them together using the .then() method
 - Using async/await syntax to make asynchronous code more readable and maintainable.
 
-=======
 **Q: Why do we need to use the key property in React? What are the benefits of using key when rendering a list of elements?**  
 A: In React, the key property is used to identify individual elements in a list of elements that are rendered dynamically. When rendering a list of elements using an array in React, each element needs a unique identifier so that React can efficiently update and re-render the list when necessary.
 
@@ -81,7 +79,6 @@ In summary, the key property in React is used to identify individual elements in
 4. Use state management libraries: Using state management libraries such as Redux or MobX can also help prevent unnecessary re-renders by optimizing the flow of data between components.
 
 In summary, there are several ways to prevent components from re-rendering in React, including implementing shouldComponentUpdate or React.memo, using PureComponent, using a key property, and using state management libraries. Choosing the appropriate method depends on the specific use case and the requirements of the application.
->>>>>>> 6a6aac6e874aa0323e8c4c4a287541f7181cbed6
 ## Advanced
 **Q: Imagine you have a React application with a parent component, a child component, and a grandchild component. Can you describe in what order the lifecycle methods of each component are called during the mounting, updating, and unmounting phases?**  
 A: When a parent component renders its child component, and the child component renders its own child component, the lifecycle methods are called in the following order:
@@ -130,7 +127,6 @@ For example:
     myFrozenObj.name = 'Jane'; // Invalid, since myFrozenObj is immutable
 To summarize, const is used to declare a variable that cannot be reassigned, whereas Object.freeze() is used to create an immutable object that cannot be modified.
 
-<<<<<<< HEAD
 **Q: What is lazy loading in React?**  
 Lazy loading is a technique in React that enables you to defer the loading of non-critical resources until they are needed. This can help improve the initial load time and performance of your application by reducing the amount of data that needs to be loaded upfront.
 
@@ -151,7 +147,16 @@ One potential downside of lazy loading is that it can lead to a slower overall p
 
 **Q: What are some best practices for implementing lazy loading in React?**  
 Some best practices for implementing lazy loading in React include:
-=======
+
+In summary, controlled components use React state to manage the value of the input, while uncontrolled components rely on the DOM to handle the value. Controlled components give you more control and flexibility over the form data, while uncontrolled components are simpler to use and require less code.
+
+- Prioritizing the lazy loading of critical resources
+- Limiting the number of requests made during lazy loading
+- Using code splitting to break up large bundles into smaller, more manageable chunks
+- Minimizing the use of third-party libraries that may add unnecessary overhead
+- Testing and monitoring the performance of your lazy loading implementation to identify areas for improvement.
+
+
 **Q: What is the difference between controlled and uncontrolled components in React? When would you use one over the other?**  
 In React, there are two ways to manage form inputs: controlled components and uncontrolled components. The main difference between the two is how they handle and update the input values.
 
@@ -168,12 +173,35 @@ Uncontrolled Components:
 - When the user types something into the input, the DOM handles the value and the component does not have any direct control over it.
 - To get the value of the input, you need to use a ref to access the DOM node.
 - Uncontrolled components are often used when you don't need to do any validation or formatting on the data and just want to get the data and submit it as is.
+**Q: What is a Progressive Web App (PWA)?**  
+A: A Progressive Web App is a type of web application that provides a native-app-like user experience using modern web technologies. PWAs can be installed on a user's device, work offline, and are accessible through a web browser. They are designed to be fast, reliable, and engaging.
 
-In summary, controlled components use React state to manage the value of the input, while uncontrolled components rely on the DOM to handle the value. Controlled components give you more control and flexibility over the form data, while uncontrolled components are simpler to use and require less code.
->>>>>>> 6a6aac6e874aa0323e8c4c4a287541f7181cbed6
+**Q: What are the benefits of using PWAs?**  
+A: PWAs offer several benefits over traditional web applications, such as faster loading times, smoother transitions, and better offline support. They also offer a more engaging user experience and can be easily installed on a user's device without the need for an app store.
 
-- Prioritizing the lazy loading of critical resources
-- Limiting the number of requests made during lazy loading
-- Using code splitting to break up large bundles into smaller, more manageable chunks
-- Minimizing the use of third-party libraries that may add unnecessary overhead
-- Testing and monitoring the performance of your lazy loading implementation to identify areas for improvement.
+**Q: What is a Service Worker?**  
+A: A Service Worker is a JavaScript file that runs in the background of a web application and intercepts network requests made by the application. Service Workers are used to provide offline support, improve application performance, and enable push notifications.
+
+**Q: How does a Service Worker work?**  
+A: When a user visits a website, the Service Worker script is downloaded and registered with the browser. The Service Worker then intercepts network requests made by the website and can modify them, cache them, or respond to them directly from the cache. This allows the website to provide offline support and improve performance by reducing the amount of data that needs to be downloaded.
+
+**Q: What is caching in the context of PWAs and Service Workers?**  
+A: Caching is the process of storing data locally on a user's device to reduce the amount of data that needs to be downloaded from the network. In the context of PWAs and Service Workers, caching is used to provide offline support, improve application performance, and reduce the amount of data that needs to be downloaded.
+
+**Q: How can Service Workers improve application performance?**  
+A: Service Workers can improve application performance by caching frequently accessed data and assets, such as HTML, CSS, and JavaScript files. By serving these files from the cache instead of downloading them from the network, Service Workers can reduce page load times and improve the overall user experience.
+
+**Q: How do you implement push notifications in a PWA using Service Workers?**  
+A: To implement push notifications in a PWA using Service Workers, you need to first register a Service Worker with the browser. You then need to request permission from the user to send push notifications. Once permission is granted, you can use a push notification API to send notifications to the user's device. When a user clicks on a notification, you can use a Service Worker to handle the event and open the application to a specific page or action.
+
+**Q: How can you test a PWA with Service Workers?**  
+A: To test a PWA with Service Workers, you can use browser developer tools to simulate offline mode and test how the application behaves when the network is unavailable. You can also test caching behavior by clearing the cache and reloading the application. Additionally, you can test push notifications by sending test notifications to a registered Service Worker and verifying that they are received correctly.
+
+**Q: What is Redux Saga, and what are its benefits?**  
+A: Redux Saga is a middleware library used in combination with Redux to handle side effects and asynchronous actions in React applications. It allows developers to write more maintainable and testable code, separates side effects from the core application logic, and enables handling complex asynchronous flows with ease.
+
+**Q: What are some use cases for Redux Saga?**  
+A: Redux Saga is useful for handling asynchronous operations, such as API requests, file uploads, and user input validation. It can also be used for tasks like caching, polling, and client-side routing. In addition, Redux Saga can be used for handling complex control flows and managing multiple asynchronous actions.
+
+**Q: What is a Saga in Redux Saga?**  
+A: A Saga is a long-running, generator function that handles asynchronous actions in Redux Saga. Sagas are executed by Redux Saga's middleware and are used to manage complex control flows, handle side effects, and dispatch Redux actions in response to async events.
