@@ -1,3 +1,4 @@
+# Object Oriented Programming
 **Q: What is Object-oriented programming?**  
 A: Object-oriented programming (OOP) is a programming paradigm that uses objects to represent and manipulate data. In OOP, objects are instances of classes, which define the properties and behaviors of the objects.
 
@@ -27,3 +28,27 @@ A: A method is a function that is associated with an object. It can be called on
 
 **Q: What is a static method?**  
 A: A static method is a method that belongs to the class itself, rather than to any specific object. It can be called on the class itself, rather than on an instance of the class, and is typically used for utility functions that don't require access to an object's properties.
+
+**Q: What are the SOLID principles in software design?**  
+Answer: The SOLID principles are a set of guidelines for object-oriented software design that aim to create more maintainable, flexible, and scalable software. The principles include Single Responsibility Principle (SRP), Open/Closed Principle (OCP), Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP), and Dependency Inversion Principle (DIP).
+
+**Q: What is the purpose of unit testing?**  
+Answer: The purpose of unit testing is to test individual units of code in isolation to ensure that they work correctly. Unit testing helps to identify bugs early in the development process and can help to improve the quality and maintainability of code.
+
+**Q: What is recursion and what is it used for?**  
+Answer: Recursion is a programming technique where a function calls itself until it reaches a base case. Recursion is often used to solve problems that can be broken down into smaller, simpler problems, such as tree traversal or searching through a maze.
+
+**Q: What is the difference between a stack and a queue data structure?**  
+Answer: A stack is a Last-In-First-Out (LIFO) data structure, where elements are added and removed from the top of the stack. A queue is a First-In-First-Out (FIFO) data structure, where elements are added to the back of the queue and removed from the front.
+
+**Q: What is polymorphism in object-oriented programming?**  
+Answer: Polymorphism is the ability of objects of different classes to be treated as if they were objects of the same class. In Java, polymorphism can be achieved through inheritance and interfaces.
+
+**Q: What is a database index and why is it important?**  
+Answer: A database index is a data structure that improves the speed of data retrieval operations on a database table. An index allows the database to find and retrieve data more quickly by providing a fast lookup mechanism for commonly used queries.
+
+**Q: What is the difference between a primary key and a foreign key in a database?**  
+Answer: A primary key is a unique identifier for a row in a database table, while a foreign key is a reference to a primary key in another table. Foreign keys are used to create relationships between tables in a database.
+
+**Q: What is the purpose of the Model-View-Controller (MVC) architectural pattern?**  
+Answer: The Model-View-Controller (MVC) pattern is a software design pattern that separates the user interface (view) from the data and logic (model) of an application. The controller acts as an intermediary between the view and the model, handling user input and updating the model accordingly. The MVC pattern can help to improve the maintainability and scalability of an application
