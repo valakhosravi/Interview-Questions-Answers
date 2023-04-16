@@ -15,7 +15,7 @@ The questions cover a variety of topics related to software development, includi
 - [Data structures and algorithms](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Data%20structures%20and%20algorithms.md)  
 - Programming languages
   - [JavaScript](https://github.com/valakhosravi/Interview-Questions-Answers/tree/test/Technical/Programming%20languages/JavaScript)
-    - Typscript
+    - [Typscript](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/TypeScript.md)
     - [React](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Programming%20languages/JavaScript/React.md)
     - Angular
     - Vue.js
@@ -29,7 +29,7 @@ The questions cover a variety of topics related to software development, includi
   - SQL
 - Data mining
   - [Data preprocessing and cleaning](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Data%20mining/Data%20preprocessing%20and%20cleaning.md)
-  - Exploratory data analysis (EDA)
+  - [Exploratory data analysis (EDA)](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Data%20mining/Exploratory%20data%20analysis%20(EDA).md)
   - Supervised learning techniques (e.g. regression, decision trees, random forests)
   - Unsupervised learning techniques (e.g. clustering, dimensionality reduction)
   - Time series analysis
