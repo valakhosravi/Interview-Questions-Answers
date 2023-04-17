@@ -22,11 +22,20 @@ The questions cover a variety of topics related to software development, includi
     - Node.js
       - Express.js
   - [Python](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/Python.md)
+      - Django
+      - Flask
   - C/C++
   - [C#](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/C%23.md)
-  - .NET
+      - .NET
+      - EF (Entity Framework)
   - Java
+  - Go
+  - PHP
+      - Laravel
   - HTML/CSS
+      - Boostrap
+      - SASS/SCSS
+      - LESS
   - SQL
 - Data mining
   - [Data preprocessing and cleaning](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Data%20mining/Data%20preprocessing%20and%20cleaning.md)
