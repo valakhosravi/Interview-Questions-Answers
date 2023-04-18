@@ -17,7 +17,7 @@ The questions cover a variety of topics related to software development, includi
   - [JavaScript](https://github.com/valakhosravi/Interview-Questions-Answers/tree/test/Technical/Programming%20languages/JavaScript)
     - [Typscript](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/TypeScript.md)
     - [React](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Programming%20languages/JavaScript/React.md)
-    - Angular
+    - [Angular](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/Angular.md)
     - Vue.js
     - Node.js
       - Express.js
