@@ -79,6 +79,52 @@ In summary, the key property in React is used to identify individual elements in
 4. Use state management libraries: Using state management libraries such as Redux or MobX can also help prevent unnecessary re-renders by optimizing the flow of data between components.
 
 In summary, there are several ways to prevent components from re-rendering in React, including implementing shouldComponentUpdate or React.memo, using PureComponent, using a key property, and using state management libraries. Choosing the appropriate method depends on the specific use case and the requirements of the application.
+
+**Q: What is useCallback in React?**  
+A: useCallback is a React hook that memoizes a callback function and returns a memoized version of it. This can improve the performance of your application by reducing the number of unnecessary re-renders that occur when a component is updated.
+
+**Q: How does useCallback work?**  
+A: When you use useCallback, React will memoize the callback function and only re-create it if one of the dependencies passed to useCallback has changed. This can help to reduce the number of times that a component re-renders when the callback function is used as a prop.
+
+**Q: What is useMemo in React?**  
+A: useMemo is a React hook that memoizes a value and returns a memoized version of it. This can improve the performance of your application by reducing the number of unnecessary re-computations that occur when a component is updated.
+
+**Q: How does useMemo work?**  
+A: When you use useMemo, React will memoize the value and only re-compute it if one of the dependencies passed to useMemo has changed. This can help to reduce the number of times that a component re-renders when the value is used as a prop.
+
+**Q: When should you use useCallback and useMemo in React? Write a sample use case for them.**  
+A: You should use useCallback and useMemo when you have expensive computations or functions that are passed down as props to child components. By memoizing the function or value, you can reduce the number of times that a component re-renders and improve the performance of your application. You should also use useCallback and useMemo when you have complex data structures that need to be computed or transformed, as this can also improve performance.
+
+    import React, { useState, useCallback, useMemo } from 'react';
+
+    function MyComponent() {
+      const [count, setCount] = useState(0);
+
+      // useCallback hook is used to memoize the function handleIncrement,
+      // so that it doesn't get recreated on every render unless the dependency
+      // array changes.
+      const handleIncrement = useCallback(() => {
+        setCount(count + 1);
+      }, [count]);
+
+      // useMemo hook is used to memoize the computed value of evenOrOdd,
+      // so that it doesn't get recomputed on every render unless the dependency
+      // array changes.
+      const evenOrOdd = useMemo(() => {
+        return count % 2 === 0 ? 'even' : 'odd';
+      }, [count]);
+
+      return (
+        <div>
+          <p>Count: {count}</p>
+          <p>Count is {evenOrOdd}</p>
+          <button onClick={handleIncrement}>Increment Count</button>
+        </div>
+      );
+    }
+
+    export default MyComponent;
+
 ## Advanced
 **Q: Imagine you have a React application with a parent component, a child component, and a grandchild component. Can you describe in what order the lifecycle methods of each component are called during the mounting, updating, and unmounting phases?**  
 A: When a parent component renders its child component, and the child component renders its own child component, the lifecycle methods are called in the following order:
