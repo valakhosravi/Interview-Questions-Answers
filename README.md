@@ -54,7 +54,21 @@ The questions cover a variety of topics related to software development, includi
 - System design and architecture  
 - Testing and debugging  
 - DevOps
-- Docker
+  - [Ansible](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Ansible.md)
+  - [Docker](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Docker.md)
+  - [ELK](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/ELK.md)
+  - [Gitlab](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Gitlab.md)
+  - [HAProxy](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/HAProxy.md)
+  - [Jenkins](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Jenkins.md)
+  - [Kafka](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Kafka.md)
+  - [Kubernetes](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Kubernetes.md)
+  - [Linux](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Linux.md)
+  - [Mysql](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Mysql.md)
+  - [NginxReverseProxy](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/NginxReverseProxy.md)
+  - [Prometheus](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Prometheus.md)
+  - [Redis](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Redis.md)
+  - [SaltStack](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/SaltStack.md)
+  - [Sonarqube](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Sonarqube.md)
 - [Git](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Git.md)
 - Agile
 - Project management
