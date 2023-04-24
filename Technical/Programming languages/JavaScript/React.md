@@ -39,8 +39,6 @@ Answer: You can pass a second argument to `useEffect` that is an array of depend
 **Q: What is `useReducer` in React and why is it used?**  
 Answer: `useReducer` is a React hook that allows you to manage state with a reducer function, similar to how state is managed in Redux. It's used to handle complex state logic, where state changes depend on previous state or multiple state values.
 
-Sure, here's a sample use case of `useReducer` in a React component:
-
 Let's say we have a simple shopping cart component that displays a list of items and a button to add items to the cart. The component also keeps track of the total price of the items in the cart.
 
 Initially, the component starts with an empty cart and a total price of zero. When the user clicks the "Add to Cart" button, the component should update the cart by adding the selected item to the cart and updating the total price.
