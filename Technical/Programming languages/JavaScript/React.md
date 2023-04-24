@@ -30,6 +30,94 @@ componentDidMount is called once the component has mounted and is rendered for t
 **Q: What are React hooks?**  
 React hooks are functions that allow you to use state and other React features without writing a class component. Hooks were introduced in React 16.8 and include useState, useEffect, useContext, and more. They make it easier to write reusable and composable React components.
 
+**Q: What is `useEffect` in React and why is it used?**  
+Answer: `useEffect` is a React hook that allows you to run side effects after rendering the component. It's used to update the DOM, fetch data from an API, or manipulate the browser history, among other things.
+
+**Q: How do you prevent `useEffect` from running on every render?**  
+Answer: You can pass a second argument to `useEffect` that is an array of dependencies. The effect will only run when one of the dependencies has changed.
+
+**Q: What is `useReducer` in React and why is it used?**  
+Answer: `useReducer` is a React hook that allows you to manage state with a reducer function, similar to how state is managed in Redux. It's used to handle complex state logic, where state changes depend on previous state or multiple state values.
+
+Sure, here's a sample use case of `useReducer` in a React component:
+
+Let's say we have a simple shopping cart component that displays a list of items and a button to add items to the cart. The component also keeps track of the total price of the items in the cart.
+
+Initially, the component starts with an empty cart and a total price of zero. When the user clicks the "Add to Cart" button, the component should update the cart by adding the selected item to the cart and updating the total price.
+
+To implement this functionality using `useReducer`, we can define a `cartReducer` function that takes the current state and an action, and returns a new state. The state object can contain an array of items in the cart and the total price.
+
+Here's an example of what the `cartReducer` function could look like:
+
+```
+function cartReducer(state, action) {
+  switch (action.type) {
+    case 'ADD_ITEM':
+      return {
+        ...state,
+        items: [...state.items, action.payload],
+        total: state.total + action.payload.price
+      };
+    default:
+      return state;
+  }
+}
+```
+
+In this example, the `cartReducer` function takes a state object and an action object as arguments. The action object has a `type` property that determines the type of action to be performed, and a `payload` property that contains the data for the action.
+
+In this case, the `cartReducer` function has one case for the `ADD_ITEM` action type. When this action is dispatched, the function returns a new state object that adds the selected item to the cart and updates the total price by adding the price of the new item.
+
+To use `useReducer` in the component, we can initialize the state object with an empty cart and a total price of zero, and pass the `cartReducer` function to `useReducer`.
+
+Here's an example of what the component could look like:
+
+```
+import React, { useReducer } from 'react';
+
+function ShoppingCart() {
+  const [state, dispatch] = useReducer(cartReducer, { items: [], total: 0 });
+
+  const handleAddToCart = (item) => {
+    dispatch({ type: 'ADD_ITEM', payload: item });
+  };
+
+  return (
+    <div>
+      <ul>
+        {state.items.map((item) => (
+          <li key={item.id}>{item.name}: ${item.price}</li>
+        ))}
+      </ul>
+      <p>Total: ${state.total}</p>
+      <button onClick={() => handleAddToCart({ id: 1, name: 'Item', price: 10 })}>
+        Add to Cart
+      </button>
+    </div>
+  );
+}
+```
+
+In this example, the `handleAddToCart` function dispatches the `ADD_ITEM` action with the selected item as the payload. The state is then updated by the `cartReducer` function, which adds the item to the cart and updates the total price.
+
+By using `useReducer`, we can manage the state of the shopping cart in a more organized and efficient way.
+
+**Q: How does `useReducer` differ from `useState` in React?**  
+Answer: `useState` is used to manage simple state values, while `useReducer` is used to manage more complex state logic with a reducer function. `useReducer` can be useful for state updates that depend on previous state or multiple state values.
+
+**Q: What is the syntax for using `useReducer` in a functional component?**  
+Answer: You can use `useReducer` like this:
+```
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+where `state` is the current state value, `dispatch` is a function to dispatch actions to the reducer, `reducer` is a function that takes the current state and an action and returns a new state, and `initialState` is the initial state value.
+
+**Q: How do you handle asynchronous state updates with `useReducer`?**  
+Answer: You can use `useReducer` with asynchronous actions by dispatching a promise that resolves to an action object. You can then use a middleware like `redux-thunk` to handle the asynchronous actions in the reducer.
+
+**Q: Can you use `useEffect` and `useReducer` together in a React component?**  
+Answer: Yes, you can use `useEffect` and `useReducer` together in a React component. For example, you might use `useEffect` to fetch data from an API and dispatch an action to update state with the fetched data using `useReducer`.
+
 **Q: What is a promise in React?**  
 A promise is an object in JavaScript that represents the eventual completion or failure of an asynchronous operation and its resulting value.
 
