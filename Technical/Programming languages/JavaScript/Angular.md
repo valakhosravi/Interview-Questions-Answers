@@ -94,3 +94,26 @@ A: Angular Universal is a server-side rendering (SSR) solution for Angular appli
 
 **Q: What are the differences between AngularJS and React, and how do they compare in terms of performance, scalability, and complexity?**  
 A: AngularJS and React are both popular frameworks for building web applications, but they differ significantly in their architecture, approach, and philosophy. React is a library for building user interfaces, while Angular is a full-featured framework for building complex and dynamic web applications. React is known for its simplicity, flexibility, and performance, while Angular provides a more structured, opinionated, and scalable approach. In terms of complexity, Angular is generally considered to be more complex and verbose than React, but it provides more features and functionality out of the box.
+
+**Q: What is RxJS, and why is it important in Angular?**  
+Answer: RxJS is a reactive programming library that is used extensively in Angular applications. It provides a way to handle asynchronous data streams and events, making it easier to manage complex data flows and state management. RxJS is important in Angular because it allows developers to write code that is more responsive, scalable, and maintainable.
+
+**Q: What is NgRx, and how does it differ from RxJS?**  
+Answer: NgRx is a state management library that is built on top of RxJS. It provides a way to manage the application state in a centralized store and provides tools for managing side effects and handling asynchronous operations. NgRx differs from RxJS in that it is focused specifically on state management and provides a set of opinionated tools and patterns for managing application state in a scalable and maintainable way.
+
+**Q: What are the benefits of using NgRx in an Angular application?**  
+Answer: Using NgRx in an Angular application has several benefits, including:
+
+- Improved performance: NgRx can help reduce the amount of data that needs to be transferred between components and services, resulting in faster application performance.
+
+- Better code organization: NgRx promotes a more organized code structure that makes it easier to maintain and scale complex applications.
+
+- Predictable state management: NgRx provides a centralized store that allows you to manage application state in a predictable and scalable way.
+
+- Better testability: NgRx makes it easier to test your application logic in isolation, making it more robust and reliable.
+
+**Q: How do you handle side effects in NgRx?**  
+Answer: In NgRx, side effects are handled using the "Effects" feature, which is a specialized type of service that allows you to perform asynchronous operations and dispatch actions based on their outcomes. Effects are typically used to handle API calls, WebSocket connections, and other external interactions that can affect the application state. By isolating side effects in effects services, you can keep your state management logic pure and predictable.
+
+**Q: What is the difference between NgRx Store and NgRx Entity?**  
+Answer: NgRx Store is a centralized store that provides a way to manage application state in a predictable and scalable way. It allows you to define actions and reducers that modify the state of the store in response to user interactions and other events. NgRx Entity is a library that provides a set of tools for managing collections of entities in the store. It allows you to define entity adapters that provide a consistent way to add, update, and delete entities, as well as selectors that make it easy to retrieve entities from the store based on specific criteria.
