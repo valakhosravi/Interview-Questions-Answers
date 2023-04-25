@@ -102,9 +102,9 @@ Feel free to contribute to this repository by adding new questions, improving th
 If you'd like to contribute to this repository, please follow these steps:
 
 1. Fork the repository.
-2. Create a new branch with your changes: git checkout -b my-new-branch.
-3. Make your changes and commit them: git commit -am 'Add some questions'.
-4. Push to the branch: git push origin my-new-branch.
+2. Create a new branch with your changes: `git checkout -b my-new-branch`.
+3. Make your changes and commit them: `git commit -am 'Add some questions'`.
+4. Push to the branch: `git push origin my-new-branch`.
 5. Create a new Pull Request.  
 
 We welcome all contributions, whether it's a new question or a minor correction. Thank you for helping make this repository a great resource for developers!
