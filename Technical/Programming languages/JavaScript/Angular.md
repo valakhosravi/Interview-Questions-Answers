@@ -1,3 +1,4 @@
+# Angular
 **Q: What is Angular and how is it different from AngularJS?**  
 A: Angular is a TypeScript-based open-source web application framework that is used to build complex and dynamic applications. AngularJS is the first version of Angular, which was released in 2010 and is based on JavaScript. Angular is a complete rewrite of AngularJS and has significant differences in its architecture and functionality.
 
