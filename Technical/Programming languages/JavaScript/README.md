@@ -176,3 +176,15 @@ The output would be:
 
     global id
     global id
+
+**Q: What is the difference between Object.preventExtensions(), Object.seal(), and Object.freeze() in JavaScript?**  
+A:  
+`Object.preventExtensions()` is a method in JavaScript that prevents the addition of new properties to an object, but does not prevent the modification or deletion of existing properties.
+
+`Object.seal()` is a method in JavaScript that prevents the addition and deletion of properties to an object, but allows the modification of existing properties.
+
+`Object.freeze()` is a method in JavaScript that prevents the addition, deletion, and modification of properties to an object.
+
+In summary, Object.preventExtensions() allows for the modification and deletion of existing properties, while Object.seal() prevents the addition and deletion of properties, but allows for modification of existing properties. Object.freeze() goes a step further and prevents any modification, addition, or deletion of properties.
+
+It's important to note that these methods only apply to the object itself, and not to any nested objects or arrays within the object. Modifying nested objects or arrays will not be prevented by these methods. Additionally, these methods only affect the properties of the object that are directly accessible, and do not affect any inherited properties.
