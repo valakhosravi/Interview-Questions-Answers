@@ -16,28 +16,28 @@ The questions cover a variety of topics related to software development, includi
 - [Microservices](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Microservices.md)
 - Programming languages
   - [JavaScript](https://github.com/valakhosravi/Interview-Questions-Answers/tree/test/Technical/Programming%20languages/JavaScript)
-    - [Typscript](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/TypeScript.md)
-    - [React](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Programming%20languages/JavaScript/React.md)
-    - [Angular](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/Angular.md)
-    - Vue.js
-    - Node.js
-      - Express.js
+  - [Typscript](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/TypeScript.md)
+  - [React](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Programming%20languages/JavaScript/React.md)
+  - [Angular](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/Angular.md)
+  - Vue.js
+  - Node.js
+  - Express.js
   - [Python](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/Python.md)
-      - Django
-      - Flask
+  - Django
+  - Flask
   - PHP
   - C/C++
   - [C#](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/C%23.md)
-      - .NET
-      - EF (Entity Framework)
+  - .NET
+  - EF (Entity Framework)
   - Java
   - Go
   - PHP
-      - Laravel
+  - Laravel
   - [HTML/CSS](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Technical/Programming%20languages/HTML%20CSS)
-      - [Boostrap](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/HTML%20CSS/Bootstrap.md)
-      - SASS/SCSS
-      - LESS
+  - [Boostrap](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/HTML%20CSS/Bootstrap.md)
+  - SASS/SCSS
+  - LESS
   - SQL
 - Data mining
   - [Data preprocessing and cleaning](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Data%20mining/Data%20preprocessing%20and%20cleaning.md)
