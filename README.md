@@ -38,7 +38,7 @@ The questions cover a variety of topics related to software development, includi
   - [Boostrap](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/HTML%20CSS/Bootstrap.md)
   - SASS/SCSS
   - LESS
-  - (SQL)[https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/SQL.md]
+  - [SQL](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/SQL.md)
 - Data mining
   - [Data preprocessing and cleaning](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Data%20mining/Data%20preprocessing%20and%20cleaning.md)
   - [Exploratory data analysis (EDA)](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Data%20mining/Exploratory%20data%20analysis%20(EDA).md)
