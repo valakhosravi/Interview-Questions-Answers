@@ -77,5 +77,3 @@ JOIN books ON publishers.publisher_id = books.publisher_id
 GROUP BY publishers.publisher_id
 HAVING COUNT(*) > 10;
 ```
-
-I hope these examples help you prepare for your SQL interview. Good luck!
