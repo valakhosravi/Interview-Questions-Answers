@@ -32,3 +32,50 @@ UNION and UNION ALL are used to combine the results of two or more SELECT statem
 
 **Q: What is the difference between GROUP BY and ORDER BY in SQL?**  
 GROUP BY is used to group the rows of a table based on one or more columns, while ORDER BY is used to sort the result set based on one or more columns. GROUP BY is used with aggregate functions (such as COUNT, SUM, AVG, etc.) to calculate the summary data for each group. ORDER BY sorts the rows in ascending or descending order based on the specified column(s).
+
+**Q: Given a table called `employees` with columns `employee_id`, `employee_name`, and `salary`, write a SQL query to retrieve the names and salaries of all employees earning more than $50,000 per year.**  
+
+```sql
+SELECT employee_name, salary
+FROM employees
+WHERE salary > 50000;
+```
+
+**Q: Given a table called `orders` with columns `order_id`, `customer_id`, and `order_date`, write a SQL query to retrieve the number of orders per customer for the month of January 2023.**  
+
+```sql
+SELECT customer_id, COUNT(*) AS order_count
+FROM orders
+WHERE order_date >= '2023-01-01' AND order_date < '2023-02-01'
+GROUP BY customer_id;
+```
+
+**Q: Given a table called `students` with columns `student_id`, `student_name`, and `course_id`, and a table called `courses` with columns `course_id` and `course_name`, write a SQL query to retrieve the names of all students enrolled in the course "Database Systems".**  
+
+```sql
+SELECT student_name
+FROM students
+JOIN courses ON students.course_id = courses.course_id
+WHERE courses.course_name = 'Database Systems';
+```
+
+**Q: Given a table called `sales` with columns `sale_id`, `sale_date`, and `amount`, write a SQL query to retrieve the total sales amount for each month in the year 2022.**  
+
+```sql
+SELECT DATE_TRUNC('month', sale_date) AS month, SUM(amount) AS total_sales
+FROM sales
+WHERE sale_date >= '2022-01-01' AND sale_date < '2023-01-01'
+GROUP BY month;
+```
+
+**Q: Given a table called `books` with columns `book_id`, `book_title`, and `publisher_id`, and a table called `publishers` with columns `publisher_id` and `publisher_name`, write a SQL query to retrieve the names of all publishers who have published more than 10 books.**  
+
+```sql
+SELECT publisher_name
+FROM publishers
+JOIN books ON publishers.publisher_id = books.publisher_id
+GROUP BY publishers.publisher_id
+HAVING COUNT(*) > 10;
+```
+
+I hope these examples help you prepare for your SQL interview. Good luck!
