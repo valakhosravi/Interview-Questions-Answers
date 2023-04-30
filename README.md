@@ -13,6 +13,9 @@ Whether you are a beginner or an experienced developer, this repository can help
 ### Technical
 The questions cover a variety of topics related to software development, including:
 - [Data structures and algorithms](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Data%20structures%20and%20algorithms.md)  
+- [Object-oriented programming](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Object-oriented%20programming.md)  
+- System design and architecture  
+- [Testing and debugging](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Testing%20and%20debugging.md)  
 - [Microservices](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Microservices.md)
 - Programming languages
   - [JavaScript](https://github.com/valakhosravi/Interview-Questions-Answers/tree/test/Technical/Programming%20languages/JavaScript)
@@ -52,9 +55,6 @@ The questions cover a variety of topics related to software development, includi
   - Deep learning techniques (e.g. neural networks)
   - Big data tools and technologies (e.g. Hadoop, Spark)
   - Data visualization and communication of results.
-- [Object-oriented programming](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Object-oriented%20programming.md)  
-- System design and architecture  
-- [Testing and debugging](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Testing%20and%20debugging.md)  
 - DevOps
   - [Ansible](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Ansible.md)
   - [Docker](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Docker.md)
