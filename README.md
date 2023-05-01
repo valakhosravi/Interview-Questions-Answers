@@ -72,7 +72,7 @@ The questions cover a variety of topics related to software development, includi
   - [SaltStack](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/SaltStack.md)
   - [Sonarqube](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Devops/Sonarqube.md)
 - [Git](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Git.md)
-- [Scrum] (https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Scrum.md)
+- [Scrum](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Scrum.md)
 - Agile
 - Project management
 - Front-end development
