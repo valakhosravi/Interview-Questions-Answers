@@ -1,4 +1,37 @@
 # Scrum
+**Q: What is Scrum?**  
+A: Scrum is an agile framework for managing and completing complex projects. It emphasizes teamwork, collaboration, iterative development, and continuous improvement.
+
+**Q: What are the three roles in Scrum?**  
+A: The three roles in Scrum are the Product Owner, the Scrum Master, and the Development Team.
+
+**Q: What is the role of the Product Owner in Scrum?**  
+A: The Product Owner is responsible for creating and maintaining the product backlog, prioritizing items in the backlog, and ensuring that the team delivers value to the stakeholders.
+
+**Q: What is the role of the Scrum Master in Scrum?**  
+A: The Scrum Master is responsible for facilitating the Scrum framework, removing impediments that prevent the team from achieving their goals, and coaching team members on agile methodologies.
+
+**Q: What is the role of the Development Team in Scrum?**  
+A: The Development Team is responsible for delivering a potentially shippable product increment at the end of each sprint. They are self-organizing and cross-functional, meaning they have all the skills needed to deliver the product.
+
+**Q: What is a sprint in Scrum?**  
+A: A sprint is a time-boxed period in which the development team works to deliver a potentially shippable product increment. Sprints typically last between one to four weeks.
+
+**Q: What is a product backlog in Scrum?**  
+A: The product backlog is a prioritized list of features, enhancements, and bug fixes that need to be delivered in the product. It is maintained by the Product Owner and constantly refined and updated.
+
+**Q: What is a sprint backlog in Scrum?**  
+A: The sprint backlog is a subset of the product backlog items that the development team commits to delivering during the sprint. It is created during the sprint planning meeting.
+
+**Q: What is a daily Scrum in Scrum?**  
+A: A daily Scrum is a 15-minute meeting where the development team reviews progress, discusses any impediments, and plans for the next 24 hours. It is held every day during the sprint.
+
+**Q: What is a sprint review in Scrum?**  
+A: A sprint review is a meeting held at the end of each sprint to review the work completed and demonstrate the potentially shippable product increment to stakeholders. Feedback is gathered to inform the product backlog for the next sprint.
+
+**Q: What is a retrospective in Scrum?**  
+A: A retrospective is a meeting held at the end of each sprint to review the sprint and identify areas for improvement. The goal is to continuously improve the team's process and performance.
+
 **Q: What is a Scrum Master?**  
 A: A Scrum Master is a role within an agile development team that is responsible for ensuring that the team follows the Scrum framework and principles.
 
