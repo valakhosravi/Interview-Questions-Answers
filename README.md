@@ -85,16 +85,16 @@ And more
 ### non-technical
 Non-technical interview questions are questions that are asked during the interview process to evaluate a candidate's personal characteristics, soft skills, and ability to fit into the company culture.
 - [Behavioral](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Non-technical/Behavioral.md)
+- [Emotional intelligence](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Non-technical/Emotional%20intelligence.md)
+- [Teamwork](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Non-technical/Teamwork.md)
 - Diversity and inclusion
 - Conflict resolution
 - Leadership
-- [Teamwork](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Non-technical/Teamwork.md)
 - Communication skills
 - Motivation and goal-setting
 - Time management
 - Adaptability
 - Decision-making
-- [Emotional intelligence](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Non-technical/Emotional%20intelligence.md)
 - Customer service
 ## How to Use
 To use this repository, simply browse the questions and answers to improve your knowledge and skills. You can also use them to prepare for a job interview or a technical interview.
