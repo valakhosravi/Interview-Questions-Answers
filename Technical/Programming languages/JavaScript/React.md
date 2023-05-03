@@ -434,3 +434,12 @@ Redux is a popular implementation of the Flux pattern. It provides a predictable
 
 6. Context:
 Context is a built-in feature of React that allows you to pass data through the component tree without having to pass props down manually at every level. This pattern is useful for providing global data or state to components that are nested deep in the tree.
+
+**Q: What is React Fiber, and how does it improve performance in React applications?**  
+A: React Fiber is a complete rewrite of the React reconciliation algorithm, which is responsible for determining which components in the component tree need to be updated when the application state changes. Fiber is designed to be more efficient and flexible than the previous reconciliation algorithm, which was based on a depth-first search algorithm.
+
+Fiber works by breaking down the update process into smaller units of work, called "fiber" nodes, and then prioritizing and scheduling these nodes based on their importance and urgency. This allows React to perform updates in a more incremental and prioritized manner, which can lead to improved performance and reduced blocking of the main thread.
+
+One of the key benefits of React Fiber is that it enables the implementation of features such as concurrent rendering and time-slicing. These features allow React to continue rendering and updating the user interface even while other tasks, such as data fetching or processing, are still running in the background. This can lead to a more responsive and smoother user experience, especially for large and complex applications.
+
+Overall, React Fiber is a major improvement to the React rendering process, and it has enabled new features and optimizations that were not possible with the previous reconciliation algorithm. It is an important concept for developers to understand when working with React, especially when it comes to optimizing performance in complex applications.
