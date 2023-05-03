@@ -94,7 +94,7 @@ Non-technical interview questions are questions that are asked during the interv
 - Time management
 - Adaptability
 - Decision-making
-- Emotional intelligence
+- [Emotional intelligence](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Non-technical/Emotional%20intelligence.md)
 - Customer service
 ## How to Use
 To use this repository, simply browse the questions and answers to improve your knowledge and skills. You can also use them to prepare for a job interview or a technical interview.
