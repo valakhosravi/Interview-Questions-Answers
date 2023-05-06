@@ -28,3 +28,26 @@ A: The "readonly" keyword in TypeScript is used to indicate that a property or v
 
 **Q: How does TypeScript handle inheritance?**  
 A: TypeScript supports inheritance through classes, which can inherit properties and methods from a parent class using the "extends" keyword. TypeScript also supports the use of interfaces for inheritance and code reuse.
+
+**Q1: What is the difference between "null" and "undefined" in TypeScript?**  
+A1: In TypeScript, both "null" and "undefined" represent absence of value, but they have different use cases. "null" is an assignment value that represents the intentional absence of any object value, while "undefined" is a type that indicates the absence of a value in variables that have not been assigned.
+
+**Q2: What is the difference between "any" and "unknown" types in TypeScript?**  
+A2: Both "any" and "unknown" are types that can hold any value. However, there are important differences:
+- Variables of type "any" can be assigned and re-assigned any value without type-checking, while variables of type "unknown" require explicit type-checking before performing any operations.
+- "unknown" is a safer type than "any" because it forces you to perform type-checking and narrowing before using the value.
+
+Q3: Explain the concept of "structural typing" in TypeScript.
+
+A3: Structural typing is a type system used by TypeScript, where compatibility is based on the structure of types rather than their explicit declaration. If two types have compatible structures, they are considered assignable to each other, even if they were defined separately.
+
+**Q4: How can you create an immutable object in TypeScript?**  
+A4: TypeScript does not have built-in language support for immutability. However, you can achieve immutability by using techniques like:
+- Using the `readonly` modifier to define read-only properties or array elements.
+- Creating new objects or arrays instead of modifying existing ones.
+- Using libraries like Immutable.js or Immer that provide immutable data structures and utilities.
+
+**Q5: What is a conditional type in TypeScript?**  
+A5: Conditional types in TypeScript allow you to create type transformations based on conditions. They are defined using the `extends` keyword and conditional expressions. Conditional types are often used in generic type definitions to create more flexible and reusable types.
+
+These are just a few examples of tricky TypeScript interview questions. Remember to dive deeper into each topic to gain a more comprehensive understanding. Good luck with your interview preparation!
