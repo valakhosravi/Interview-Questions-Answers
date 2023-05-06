@@ -119,10 +119,10 @@ Answer: In NgRx, side effects are handled using the "Effects" feature, which is 
 **Q: What is the difference between NgRx Store and NgRx Entity?**  
 Answer: NgRx Store is a centralized store that provides a way to manage application state in a predictable and scalable way. It allows you to define actions and reducers that modify the state of the store in response to user interactions and other events. NgRx Entity is a library that provides a set of tools for managing collections of entities in the store. It allows you to define entity adapters that provide a consistent way to add, update, and delete entities, as well as selectors that make it easy to retrieve entities from the store based on specific criteria.
 
-1. How do you handle asynchronous data in Angular templates?
+**Q:How do you handle asynchronous data in Angular templates?**  
 To handle asynchronous data in Angular templates, you can use the `async` pipe. The `async` pipe subscribes to an Observable or Promise and updates the template when the data is available. For example, you can use the `async` pipe to display a list of items returned from an HTTP request: `<ul><li *ngFor="let item of items$ | async">{{ item }}</li></ul>`.
 
-2. How do you implement lazy loading in Angular?
+**Q:How do you implement lazy loading in Angular?**  
 To implement lazy loading in Angular, you can use the `loadChildren` property in the route definition. For example, you can define a lazy-loaded module and route like this:
 ```
 const routes: Routes = [
@@ -132,13 +132,13 @@ const routes: Routes = [
 ```
 The `loadChildren` property specifies a function that loads the module dynamically. When the route is activated, the module is loaded and the component is displayed.
 
-3. How do you implement server-side rendering (SSR) in Angular?
+**Q:How do you implement server-side rendering (SSR) in Angular?**  
 To implement SSR in Angular, you can use the Angular Universal library. Angular Universal allows you to render your application on the server and send the HTML to the client. This can improve performance and SEO. To implement SSR, you need to create a server-side entry point, configure your app for SSR, and build the app for the server using the `ng build --prod --server` command.
 
-4. How do you implement state management in Angular?
+**Q:How do you implement state management in Angular?**  
 To implement state management in Angular, you can use a library like NgRx. NgRx is a state management library inspired by Redux. It allows you to manage your application's state in a predictable way using a unidirectional data flow. NgRx provides a set of building blocks, including actions, reducers, selectors, and effects. You can use these building blocks to define your application's state and behavior.
 
-5. How do you implement unit testing in Angular?
+**Q:How do you implement unit testing in Angular?**  
 To implement unit testing in Angular, you can use the Jasmine testing framework and the Karma test runner. Jasmine provides a set of functions for writing tests, including `describe`, `it`, and `expect`. Karma runs the tests in a browser-like environment and reports the results. To write a unit test, you can create a spec file and define a test suite and one or more test cases. For example:
 ```
 describe('MyComponent', () => {
