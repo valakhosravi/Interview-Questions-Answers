@@ -163,3 +163,29 @@ describe('MyComponent', () => {
   });
 });
 ```
+
+**Q: What are Angular lifecycle hooks?**  
+A: Angular lifecycle hooks are methods that are provided by the Angular framework and are called at specific points during the creation, update, and destruction of a component. These hooks allow developers to tap into various stages of a component's lifecycle and perform certain actions.
+
+**Q: What are the different lifecycle hooks in Angular?**  
+A: The different lifecycle hooks in Angular are as follows:
+- ngOnInit: Called after the component is initialized and the inputs are bound.
+- ngOnChanges: Called when one or more input properties of a component change.
+- ngDoCheck: Called during every change detection run, allowing developers to implement custom change detection logic.
+- ngAfterContentInit: Called after content (such as child components) has been projected into the component.
+- ngAfterContentChecked: Called after every check of the projected content.
+- ngAfterViewInit: Called after the component's view and child views have been initialized.
+- ngAfterViewChecked: Called after every check of the component's view and child views.
+- ngOnDestroy: Called just before the component is destroyed.
+
+**Q: How would you use the ngOnInit() lifecycle hook?**  
+A: The ngOnInit() hook is commonly used for component initialization tasks. You can use it to perform actions such as initializing data, subscribing to observables, or making API calls. This hook is called once, after the component's inputs have been bound.
+
+**Q: When would you use the ngOnChanges() lifecycle hook?**  
+A: The ngOnChanges() hook is used when you need to respond to changes in the input properties of a component. It is called whenever the value of an input property changes. You can access the previous and current values of the input properties within this hook.
+
+**Q: Explain the ngOnDestroy() lifecycle hook.**  
+A: The ngOnDestroy() hook is called just before a component is destroyed. It is useful for performing cleanup tasks such as unsubscribing from observables, canceling timers, or releasing resources acquired by the component. This hook gives you a chance to release any resources held by the component and prevent memory leaks.
+
+**Q: How would you force a component to re-render in Angular?**  
+A: Angular automatically triggers the change detection mechanism whenever there is a change in a component's input properties or when certain events occur. If you want to manually trigger a re-render of a component, you can make use of the ChangeDetectorRef service. By calling its detectChanges() method, you can force a component to re-render.
