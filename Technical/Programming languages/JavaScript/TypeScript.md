@@ -37,7 +37,7 @@ A: Both "any" and "unknown" are types that can hold any value. However, there ar
 - Variables of type "any" can be assigned and re-assigned any value without type-checking, while variables of type "unknown" require explicit type-checking before performing any operations.
 - "unknown" is a safer type than "any" because it forces you to perform type-checking and narrowing before using the value.
 
-**Q3: Explain the concept of "structural typing" in TypeScript.**  
+**Q: Explain the concept of "structural typing" in TypeScript.**  
 A: Structural typing is a type system used by TypeScript, where compatibility is based on the structure of types rather than their explicit declaration. If two types have compatible structures, they are considered assignable to each other, even if they were defined separately.
 
 **Q: How can you create an immutable object in TypeScript?**  
