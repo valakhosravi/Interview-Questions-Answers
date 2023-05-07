@@ -190,7 +190,7 @@ A: The ngOnDestroy() hook is called just before a component is destroyed. It is 
 **Q: How would you force a component to re-render in Angular?**  
 A: Angular automatically triggers the change detection mechanism whenever there is a change in a component's input properties or when certain events occur. If you want to manually trigger a re-render of a component, you can make use of the ChangeDetectorRef service. By calling its detectChanges() method, you can force a component to re-render.
 
-**Q: Explain dependency injection in simple terms.**
+**Q: Explain dependency injection in simple terms.**  
 A: Dependency injection is a design pattern used in software development to make code more modular, flexible, and easier to maintain. In simple terms, it's a way of providing the necessary ingredients or dependencies to a class or function from the outside, rather than having the class or function create those dependencies itself.
 
 Think of it like ordering food at a restaurant. When you go to a restaurant, you don't bring your own ingredients and cook the meal yourself. Instead, you place an order and the restaurant provides you with a prepared meal. In this analogy, the restaurant is like a class or function that needs certain dependencies (ingredients), and you are providing those dependencies from the outside.
