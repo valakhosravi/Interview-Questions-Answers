@@ -26,15 +26,15 @@ The questions cover a variety of topics related to software development, includi
   - Node.js
   - Express.js
   - [Python](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/Python.md)
-  - Django
-  - Flask
+  - [Django](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/Django.md)
+  - [Flask](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/Flask.md)
   - PHP
   - C/C++
   - [C#](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/C%23.md)
   - .NET
   - EF (Entity Framework)
   - Java
-  - Go
+  - [Go](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/Go.md)
   - PHP
   - Laravel
   - [HTML/CSS](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Technical/Programming%20languages/HTML%20CSS)
