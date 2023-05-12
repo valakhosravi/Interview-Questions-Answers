@@ -75,7 +75,7 @@ The questions cover a variety of topics related to software development, includi
 - [Scrum](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Scrum.md)
 - Agile
 - Project management
-- Front-end development
+- [Front-end development](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Front-end%20development.md)
 - Back-end development
 - Full-stack development
 - Mobile app development
