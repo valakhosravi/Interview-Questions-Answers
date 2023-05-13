@@ -443,3 +443,67 @@ Fiber works by breaking down the update process into smaller units of work, call
 One of the key benefits of React Fiber is that it enables the implementation of features such as concurrent rendering and time-slicing. These features allow React to continue rendering and updating the user interface even while other tasks, such as data fetching or processing, are still running in the background. This can lead to a more responsive and smoother user experience, especially for large and complex applications.
 
 Overall, React Fiber is a major improvement to the React rendering process, and it has enabled new features and optimizations that were not possible with the previous reconciliation algorithm. It is an important concept for developers to understand when working with React, especially when it comes to optimizing performance in complex applications.
+
+**Q: What are web workers in the context of React? How do they enhance web applications?**  
+A: Web workers are JavaScript scripts that run in the background separate from the main UI thread. They enable concurrent processing, allowing heavy computations, or tasks that may block the UI, to be offloaded to a separate thread. In React, web workers can improve the performance and responsiveness of web applications by running time-consuming tasks without affecting the main UI thread, preventing UI freezes or slowdowns.
+
+**Q: How do you create and communicate with web workers in a React application?**  
+A: In React, you can create a web worker by creating a separate JavaScript file and initializing it using the `Worker` constructor. Communication with web workers is typically done through the `postMessage` method to send data and the `onmessage` event handler to receive data from the worker. React provides hooks like `useEffect` and `useState` to manage the communication between the main thread and web workers.
+
+**Q: What are the limitations of web workers in React applications?**  
+A: While web workers offer benefits, they also have some limitations. For example:
+   - Web workers can't directly access the DOM or modify the UI since they run in a separate thread.
+   - They have limited access to the window object and can't use certain APIs available in the main thread.
+   - Communication with web workers is asynchronous, so handling complex data dependencies or shared state requires careful synchronization.
+
+**Q: How can you handle data synchronization or shared state between the main thread and web workers?**  
+A: To handle data synchronization or shared state, you can use techniques like message passing and structured cloning. For example, when sending data to a web worker, you can use the `postMessage` method to pass a message containing the data. Similarly, when receiving data from the worker, you can access it through the `event.data` property in the `onmessage` event handler.
+
+**Q: Can you provide an example of using web workers in a React application?**  
+A: Certainly! Here's an example where a web worker is used to perform a time-consuming task, such as calculating a Fibonacci sequence:
+
+```javascript
+// main.js
+import React, { useEffect, useState } from 'react';
+import FibonacciWorker from './fibonacci.worker';
+
+const MainComponent = () => {
+  const [result, setResult] = useState('');
+
+  useEffect(() => {
+    const worker = new FibonacciWorker();
+
+    worker.onmessage = (event) => {
+      setResult(event.data);
+    };
+
+    worker.postMessage(40); // Calculate Fibonacci sequence for the number 40
+
+    return () => {
+      worker.terminate();
+    };
+  }, []);
+
+  return <div>Result: {result}</div>;
+};
+
+export default MainComponent;
+```
+
+```javascript
+// fibonacci.worker.js
+const calculateFibonacci = (n) => {
+  if (n <= 1) {
+    return n;
+  }
+  return calculateFibonacci(n - 1) + calculateFibonacci(n - 2);
+};
+
+onmessage = (event) => {
+  const result = calculateFibonacci(event.data);
+  postMessage(result);
+};
+```
+
+In this example, the `MainComponent` sets up a web worker using the FibonacciWorker file, which calculates the Fibonacci sequence for a given number. The result is then displayed in the component.
+
