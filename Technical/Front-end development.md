@@ -33,3 +33,35 @@ Answer: Staying up to date is crucial in the fast-paced field of front-end devel
    - I make use of social media platforms like Twitter and LinkedIn to follow influential figures and organizations in the front-end development community.
    - I experiment with side projects to explore new technologies and techniques.
    - I take online courses and tutorials to enhance my skills and learn about emerging trends.
+
+**Q: What are the benefits of using a CSS preprocessor like Sass or Less?**  
+A: CSS preprocessors offer several benefits in front-end development:
+   - They provide variables, mixins, and functions, allowing for code reuse and easier maintenance.
+   - Preprocessors offer nesting capabilities, which help in writing cleaner and more organized CSS code.
+   - They support modularization, allowing developers to split their stylesheets into smaller, manageable files.
+   - Preprocessors offer advanced features like mathematical operations, conditional statements, and loops, making complex styling tasks easier.
+   - They provide automatic vendor prefixing, reducing the need for manual prefixing and improving cross-browser compatibility.
+   - Preprocessors enable the use of third-party plugins and extensions, expanding the capabilities of CSS.
+
+**Q: How do you handle responsive design and ensure that a website is mobile-friendly?**  
+A: Creating responsive designs and ensuring mobile-friendliness is crucial in today's multi-device world. Here's how I approach it:
+   - I use CSS media queries to apply different styles based on the screen size, adapting the layout and content accordingly.
+   - I prioritize mobile-first design, starting with a narrow viewport and progressively enhancing the design for larger screens.
+   - I test the website on various devices and screen sizes to ensure proper rendering and usability.
+   - I make use of responsive frameworks like Bootstrap or Foundation to leverage pre-built responsive components and grid systems.
+   - I optimize images for different screen resolutions using techniques like responsive images, srcset, and picture elements.
+   - I focus on touch-friendly interactions, using appropriate touch events and ensuring button sizes are suitable for touch targets.
+
+**Q: Can you explain the concept of "progressive enhancement" in front-end development?**  
+A: Progressive enhancement is an approach that involves designing and building websites in layers, starting with a solid foundation and adding advanced features on top. Here's an example of how it can be explained:
+   - I believe in starting with a core experience that works on a wide range of devices and browsers, using basic HTML, CSS, and JavaScript.
+   - Once the core experience is functional, I enhance it by adding more advanced features or technologies, such as CSS animations, JavaScript interactivity, or API integrations.
+   - This approach ensures that the website is accessible and usable by all users, regardless of their device or browser capabilities.
+   - It also provides a graceful degradation strategy, allowing older browsers or devices with limited capabilities to still access the content and functionality of the site.
+
+**Q: How do you handle cross-browser compatibility issues? Can you give an example of a specific issue you've encountered and how you resolved it?**  
+A: Cross-browser compatibility is a common challenge in front-end development. Here's how I handle it:
+   - I extensively test my code on different browsers and use browser-specific developer tools to identify and fix issues.
+   - I use CSS resets or normalize.css to ensure consistent styling across browsers by resetting or normalizing default styles.
+   - I research and implement browser-specific CSS hacks or workarounds when necessary, always keeping in mind the potential risks and limitations.
+   - I've encountered an issue where a CSS transition wasn't working correctly in Safari. After investigating, I discovered that Safari required the -webkit- prefix for the transition property. 
