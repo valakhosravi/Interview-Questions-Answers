@@ -13,7 +13,7 @@ Whether you are a beginner or an experienced developer, this repository can help
 ### Technical
 The questions cover a variety of topics related to software development, including:
 - [Data structures and algorithms](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Data%20structures%20and%20algorithms.md)  
-- [Object-oriented programming](https://github.com/valakhosravi/Interview-Questions-Answers/blob/test/Technical/Object-oriented%20programming.md)  
+- [Object-oriented programming](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Object-oriented%20programming.md)  
 - System design and architecture  
 - [Testing and debugging](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Testing%20and%20debugging.md)  
 - [Microservices](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Microservices.md)
