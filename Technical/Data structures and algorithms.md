@@ -57,3 +57,83 @@ A backtracking algorithm is an algorithm that searches for all possible solution
 
 **Q: What is the time complexity of a quicksort algorithm?**  
 The time complexity of a quicksort algorithm is O(n log n) on average, but can be O(n^2) in the worst case.
+
+**Q: Write a function to find the maximum sum of any contiguous subarray in a given array of integers.**  
+```python
+def max_subarray_sum(arr):
+    max_sum = float('-inf')
+    current_sum = 0
+
+    for num in arr:
+        current_sum = max(num, current_sum + num)
+        max_sum = max(max_sum, current_sum)
+
+    return max_sum
+
+# Test the function
+arr = [1, -3, 2, 1, -1]
+print(max_subarray_sum(arr))  # Output: 3 (corresponding to subarray [2, 1])
+```
+
+**Q: Implement a function to reverse a singly linked list.**  
+```python
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def reverse_linked_list(head):
+    prev = None
+    current = head
+
+    while current:
+        next_node = current.next
+        current.next = prev
+        prev = current
+        current = next_node
+
+    return prev
+
+# Test the function
+head = ListNode(1)
+head.next = ListNode(2)
+head.next.next = ListNode(3)
+reversed_head = reverse_linked_list(head)
+print(reversed_head.val, reversed_head.next.val, reversed_head.next.next.val)  # Output: 3 2 1
+```
+
+**Q: Given a sorted array of integers, write a function to remove all duplicate elements in-place and return the new length of the array.**  
+```python
+def remove_duplicates(nums):
+    if len(nums) == 0:
+        return 0
+
+    unique_index = 0
+    for i in range(1, len(nums)):
+        if nums[i] != nums[unique_index]:
+            unique_index += 1
+            nums[unique_index] = nums[i]
+
+    return unique_index + 1
+
+# Test the function
+nums = [1, 1, 2, 2, 2, 3, 4, 4, 5]
+new_length = remove_duplicates(nums)
+print(new_length)  # Output: 5 (corresponding to the array [1, 2, 3, 4, 5])
+```
+
+**Q: Implement a function to check whether a string is a palindrome (reads the same forwards and backwards), considering only alphanumeric characters and ignoring case.**  
+```python
+import re
+
+def is_palindrome(s):
+    s = re.sub('[^a-zA-Z0-9]', '', s).lower()
+    return s == s[::-1]
+
+# Test the function
+string1 = "A man, a plan, a canal: Panama"
+string2 = "race a car"
+print(is_palindrome(string1))  # Output: True
+print(is_palindrome(string2))  # Output: False
+```
+
