@@ -507,3 +507,102 @@ onmessage = (event) => {
 
 In this example, the `MainComponent` sets up a web worker using the FibonacciWorker file, which calculates the Fibonacci sequence for a given number. The result is then displayed in the component.
 
+**Q: What are React style components?**  
+A: React style components, also known as styled components, are a way to write CSS in JavaScript and associate it with a specific React component. They provide a convenient and modular approach to styling React components by encapsulating styles within the component itself.
+
+**Q: How do you create a styled component in React?**  
+A: To create a styled component in React, you can use libraries like styled-components. It provides a `styled` function that allows you to define a styled component. Here's an example:
+```jsx
+import styled from 'styled-components';
+
+const Button = styled.button`
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+`;
+```
+
+**Q: How can you apply styles conditionally to a styled component?**  
+A: You can apply styles conditionally to a styled component by using props. You can pass a prop to the styled component and use it to conditionally define the styles. Here's an example:
+```jsx
+import styled from 'styled-components';
+
+const Button = styled.button`
+  **bckground-color: ${props => props.primary ? 'blue' : 'gray'};**  
+  clor: white;
+  padding: 10px 20px;
+`;
+```
+In this example, the `background-color` of the button will be blue if the `primary` prop is true, otherwise it will be gray.
+
+**Q: How do you override styles in a styled component?**  
+A: You can override styles in a styled component by passing additional styles as props. The passed props will override the default styles defined in the component. Here's an example:
+```jsx
+import styled from 'styled-components';
+
+const Button = styled.button`
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+`;
+
+// Override styles
+const RedButton = styled(Button)`
+  background-color: red;
+`;
+```
+In this example, the `RedButton` component extends the `Button` component and overrides the `background-color` to red.
+
+**Q: How can you style child components within a styled component?**  
+A: You can style child components within a styled component by using the `&` selector. It represents the current styled component itself, allowing you to target its child elements. Here's an example:
+```jsx
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  background-color: lightgray;
+
+  & h1 {
+    color: blue;
+  }
+`;
+```
+In this example, the `h1` element within the `Wrapper` component will have a blue color.
+
+**Q: How do you pass custom props to a styled component?**  
+A: You can pass custom props to a styled component by spreading the props using the spread operator (`...`). This allows you to access and use the props within the styles. Here's an example:
+```jsx
+import styled from 'styled-components';
+
+const Button = styled.button`
+  background-color: ${props => props.color};
+  color: white;
+  padding: 10px 20px;
+`;
+
+// Usage
+<Button color="blue">Click me</Button>
+```
+In this example, the `Button` component accepts a `color` prop, which is then used to determine the background color of the button.
+
+**Q: How can you handle pseudo-classes and media queries in styled components?**  
+A: Styled components provide support for pseudo-classes and media queries using the `&` selector and the `@media` rule. Here's an example:
+```jsx
+import styled from 'styled-components';
+
+const Button = styled.button`
+  background-color: blue;
+
+
+  color: white;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: red;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+`;
+```
+In this example, the `Button` component changes its background color on hover and adjusts the font size for screens with a maximum width of 768 pixels.
