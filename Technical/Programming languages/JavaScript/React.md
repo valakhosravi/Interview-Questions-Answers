@@ -1,5 +1,4 @@
 # React
-## Basic
 **Q: What is React?**  
 React is a JavaScript library for building user interfaces. It is based on the concept of components, which are reusable UI building blocks that can be composed together to create complex UIs. React was developed by Facebook and is widely used in web development.
 
@@ -211,7 +210,6 @@ A: You should use useCallback and useMemo when you have expensive computations o
 
     export default MyComponent;
 
-## Advanced
 **Q: Imagine you have a React application with a parent component, a child component, and a grandchild component. Can you describe in what order the lifecycle methods of each component are called during the mounting, updating, and unmounting phases?**  
 A: When a parent component renders its child component, and the child component renders its own child component, the lifecycle methods are called in the following order:
 
