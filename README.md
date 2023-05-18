@@ -89,7 +89,7 @@ Non-technical interview questions are questions that are asked during the interv
 - [Teamwork](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Non-technical/Teamwork.md)
 - [Diversity and inclusion](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Non-technical/Diversity%20and%20inclusion.md)
 - Conflict resolution
-- Leadership
+- [Leadership](https://github.com/valakhosravi/Interview-Questions-Answers/tree/main/Non-technical)
 - Communication skills
 - Motivation and goal-setting
 - Time management
