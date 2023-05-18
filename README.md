@@ -32,7 +32,6 @@ The questions cover a variety of topics related to software development, includi
   - C/C++
   - [C#](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/C%23.md)
   - .NET
-  - EF (Entity Framework)
   - Java
   - [Go](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/Go.md)
   - PHP
