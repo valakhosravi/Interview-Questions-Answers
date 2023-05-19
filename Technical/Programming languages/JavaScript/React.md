@@ -260,11 +260,11 @@ To summarize, const is used to declare a variable that cannot be reassigned, whe
 **Q: What is lazy loading in React?**  
 Lazy loading is a technique in React that enables you to defer the loading of non-critical resources until they are needed. This can help improve the initial load time and performance of your application by reducing the amount of data that needs to be loaded upfront.
 
-**Q: How do you implement lazy loading in React?**  
-In React, you can implement lazy loading by using the dynamic import() function that is built into JavaScript. This function allows you to asynchronously load a module when it is needed. You can also use the React.lazy() function and Suspense component to simplify the process of lazy loading.
-
 **Q: What are the benefits of lazy loading in React?**  
 Lazy loading can help improve the performance of your application by reducing the initial load time, which can lead to a better user experience. It can also help reduce the amount of data that needs to be loaded upfront, which can help improve the perceived performance of your application.
+
+**Q: How do you implement lazy loading in React?**  
+In React, you can implement lazy loading by using the dynamic import() function that is built into JavaScript. This function allows you to asynchronously load a module when it is needed. You can also use the React.lazy() function and Suspense component to simplify the process of lazy loading.
 
 **Q: How can you measure the performance of lazy loading in React?**  
 You can measure the performance of lazy loading in React by using tools such as Chrome DevTools or Lighthouse. These tools can help you identify areas of your application that can be optimized for better performance, including lazy loading.
