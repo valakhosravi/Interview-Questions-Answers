@@ -19,7 +19,7 @@ The questions cover a variety of topics related to software development, includi
 - [Microservices](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Microservices.md)
 - Programming languages
   - [JavaScript](https://github.com/valakhosravi/Interview-Questions-Answers/tree/test/Technical/Programming%20languages/JavaScript)
-  - [Typscript](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/TypeScript.md)
+  - [Typescript](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/TypeScript.md)
   - [React](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/React.md)
   - [Angular](https://github.com/valakhosravi/Interview-Questions-Answers/blob/main/Technical/Programming%20languages/JavaScript/Angular.md)
   - Vue.js
