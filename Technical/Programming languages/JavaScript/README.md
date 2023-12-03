@@ -11,6 +11,7 @@ A: JavaScript has six primitive data types: string, number, boolean, null, undef
 
 **Q: What is hoisting in JavaScript?**  
 A: Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their respective scopes before the code is executed. This means that you can use a variable or function before it has been declared. However, only the declaration is hoisted, not the assignment or initialization.
+Variables defined with let and const are hoisted to the top of the block, but not initialized.
 
 **Q: What is the difference between var, let, and const in JavaScript?**  
 A: var, let, and const are used to declare variables in JavaScript. The main difference between them is in their scope and how they can be reassigned. var has a function scope and can be reassigned. let and const have a block scope and cannot be redeclared, but let can be reassigned while const cannot.
